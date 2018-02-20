@@ -1,0 +1,1383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ServiproductoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dbserviproductoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ad_regionales" EntityType="ServiproductoModel.ad_regionales" />
+    <EntitySet Name="archivo" EntityType="ServiproductoModel.archivo" />
+    <EntitySet Name="archivo_body" EntityType="ServiproductoModel.archivo_body" />
+    <EntitySet Name="archivo_body_dominio" EntityType="ServiproductoModel.archivo_body_dominio" />
+    <EntitySet Name="archivo_footer" EntityType="ServiproductoModel.archivo_footer" />
+    <EntitySet Name="archivo_head" EntityType="ServiproductoModel.archivo_head" />
+    <EntitySet Name="archivo_head_dominio" EntityType="ServiproductoModel.archivo_head_dominio" />
+    <EntitySet Name="clientes" EntityType="ServiproductoModel.clientes" />
+    <EntitySet Name="codigo_contable" EntityType="ServiproductoModel.codigo_contable" />
+    <EntitySet Name="compania" EntityType="ServiproductoModel.compania" />
+    <EntitySet Name="concepto_contable" EntityType="ServiproductoModel.concepto_contable" />
+    <EntitySet Name="contrato" EntityType="ServiproductoModel.contrato" />
+    <EntitySet Name="ctaempleado" EntityType="ServiproductoModel.ctaempleado" />
+    <EntitySet Name="cuenta_compania" EntityType="ServiproductoModel.cuenta_compania" />
+    <EntitySet Name="empresasp" EntityType="ServiproductoModel.empresasp" />
+    <EntitySet Name="movimiento_concepto" EntityType="ServiproductoModel.movimiento_concepto" />
+    <EntitySet Name="movimiento_contable" EntityType="ServiproductoModel.movimiento_contable" />
+    <EntitySet Name="n_consecutivosiesa" EntityType="ServiproductoModel.n_consecutivosiesa" />
+    <EntitySet Name="n_movimientocabecera" EntityType="ServiproductoModel.n_movimientocabecera" />
+    <EntitySet Name="n_tiponomina" EntityType="ServiproductoModel.n_tiponomina" />
+    <EntitySet Name="nomina" EntityType="ServiproductoModel.nomina" />
+    <EntitySet Name="nomina_rechazada" EntityType="ServiproductoModel.nomina_rechazada" />
+    <EntitySet Name="p_cliente_bloqueado" EntityType="ServiproductoModel.p_cliente_bloqueado" />
+    <EntitySet Name="p_colaborador_bloqueado" EntityType="ServiproductoModel.p_colaborador_bloqueado" />
+    <EntitySet Name="p_formato_respuesta_banco" EntityType="ServiproductoModel.p_formato_respuesta_banco" />
+    <EntitySet Name="p_motivo_rechazo" EntityType="ServiproductoModel.p_motivo_rechazo" />
+    <EntitySet Name="parametro" EntityType="ServiproductoModel.parametro" />
+    <EntitySet Name="rechazo" EntityType="ServiproductoModel.rechazo" />
+    <EntitySet Name="rechazo_detalle" EntityType="ServiproductoModel.rechazo_detalle" />
+    <EntitySet Name="reclutamiento" EntityType="ServiproductoModel.reclutamiento" />
+    <EntitySet Name="secuencias" EntityType="ServiproductoModel.secuencias" />
+    <EntitySet Name="sucursalesp" EntityType="ServiproductoModel.sucursalesp" />
+    <EntitySet Name="tabancos" EntityType="ServiproductoModel.tabancos" />
+    <EntitySet Name="tabasucursal" EntityType="ServiproductoModel.tabasucursal" />
+    <EntitySet Name="tipo_cuenta" EntityType="ServiproductoModel.tipo_cuenta" />
+    <EntitySet Name="tipo_nomina" EntityType="ServiproductoModel.tipo_nomina" />
+    <EntitySet Name="tipo_transaccion" EntityType="ServiproductoModel.tipo_transaccion" />
+    <EntitySet Name="tiponomina" EntityType="ServiproductoModel.tiponomina" />
+    <EntitySet Name="tope_contrato" EntityType="ServiproductoModel.tope_contrato" />
+    <EntitySet Name="transaccion" EntityType="ServiproductoModel.transaccion" />
+    <EntitySet Name="transaccion_detalle" EntityType="ServiproductoModel.transaccion_detalle" />
+    <EntitySet Name="seg_paginas" EntityType="ServiproductoModel.seg_paginas" />
+    <EntitySet Name="seg_permisos" EntityType="ServiproductoModel.seg_permisos" />
+    <EntitySet Name="seg_rol" EntityType="ServiproductoModel.seg_rol" />
+    <EntitySet Name="seg_usuarios" EntityType="ServiproductoModel.seg_usuarios" />
+    <AssociationSet Name="fk_archbody_ref_arch" Association="ServiproductoModel.fk_archbody_ref_arch">
+      <End Role="archivo" EntitySet="archivo" />
+      <End Role="archivo_body" EntitySet="archivo_body" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archfoot_ref_arch" Association="ServiproductoModel.fk_archfoot_ref_arch">
+      <End Role="archivo" EntitySet="archivo" />
+      <End Role="archivo_footer" EntitySet="archivo_footer" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archhead_ref_arch" Association="ServiproductoModel.fk_archhead_ref_arch">
+      <End Role="archivo" EntitySet="archivo" />
+      <End Role="archivo_head" EntitySet="archivo_head" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archbodydomi_ref_archbody" Association="ServiproductoModel.fk_archbodydomi_ref_archbody">
+      <End Role="archivo_body" EntitySet="archivo_body" />
+      <End Role="archivo_body_dominio" EntitySet="archivo_body_dominio" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archheaddomi_ref_archhead" Association="ServiproductoModel.fk_archheaddomi_ref_archhead">
+      <End Role="archivo_head" EntitySet="archivo_head" />
+      <End Role="archivo_head_dominio" EntitySet="archivo_head_dominio" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_codigo_contable" Association="ServiproductoModel.fk_concepto_reference_codigo_contable">
+      <End Role="codigo_contable" EntitySet="codigo_contable" />
+      <End Role="movimiento_concepto" EntitySet="movimiento_concepto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania" Association="ServiproductoModel.fk_concepto_reference_compania">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="movimiento_contable" EntitySet="movimiento_contable" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania_movimiento" Association="ServiproductoModel.fk_concepto_reference_compania_movimiento">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="movimiento_concepto" EntitySet="movimiento_concepto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania_nomina" Association="ServiproductoModel.fk_concepto_reference_compania_nomina">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="concepto_contable" EntitySet="concepto_contable" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania_pago" Association="ServiproductoModel.fk_concepto_reference_compania_pago">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="concepto_contable" EntitySet="concepto_contable" />
+    </AssociationSet>
+    <AssociationSet Name="fk_cuencompa_ref_compa" Association="ServiproductoModel.fk_cuencompa_ref_compa">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="cuenta_compania" EntitySet="cuenta_compania" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tran_ref_compania" Association="ServiproductoModel.fk_tran_ref_compania">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="transaccion" EntitySet="transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_movimiento_concepto_concepto_contable" Association="ServiproductoModel.FK_movimiento_concepto_concepto_contable">
+      <End Role="concepto_contable" EntitySet="concepto_contable" />
+      <End Role="movimiento_concepto" EntitySet="movimiento_concepto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_cuencompa_ref_tipocuen" Association="ServiproductoModel.fk_cuencompa_ref_tipocuen">
+      <End Role="tipo_cuenta" EntitySet="tipo_cuenta" />
+      <End Role="cuenta_compania" EntitySet="cuenta_compania" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rechdet_ref_p_motirech" Association="ServiproductoModel.fk_rechdet_ref_p_motirech">
+      <End Role="p_motivo_rechazo" EntitySet="p_motivo_rechazo" />
+      <End Role="rechazo_detalle" EntitySet="rechazo_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rech_ref_trandeta" Association="ServiproductoModel.fk_rech_ref_trandeta">
+      <End Role="transaccion_detalle" EntitySet="transaccion_detalle" />
+      <End Role="rechazo" EntitySet="rechazo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rechdeta_ref_rech" Association="ServiproductoModel.fk_rechdeta_ref_rech">
+      <End Role="rechazo" EntitySet="rechazo" />
+      <End Role="rechazo_detalle" EntitySet="rechazo_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tabasucursal_codbanco_fkey" Association="ServiproductoModel.FK_tabasucursal_codbanco_fkey">
+      <End Role="tabancos" EntitySet="tabancos" />
+      <End Role="tabasucursal" EntitySet="tabasucursal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tran_ref_tipotran" Association="ServiproductoModel.fk_tran_ref_tipotran">
+      <End Role="tipo_transaccion" EntitySet="tipo_transaccion" />
+      <End Role="transaccion" EntitySet="transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transaccion_detalle_transaccion" Association="ServiproductoModel.FK_transaccion_detalle_transaccion">
+      <End Role="transaccion" EntitySet="transaccion" />
+      <End Role="transaccion_detalle" EntitySet="transaccion_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transaccion_detalle_transaccion_detalle" Association="ServiproductoModel.FK_transaccion_detalle_transaccion_detalle">
+      <End Role="transaccion_detalle" EntitySet="transaccion_detalle" />
+      <End Role="transaccion_detalle1" EntitySet="transaccion_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seg_permisos_id_seg_paginas_fkey" Association="ServiproductoModel.FK_seg_permisos_id_seg_paginas_fkey">
+      <End Role="seg_paginas" EntitySet="seg_paginas" />
+      <End Role="seg_permisos" EntitySet="seg_permisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seg_permisos_id_seg_rol_fkey" Association="ServiproductoModel.FK_seg_permisos_id_seg_rol_fkey">
+      <End Role="seg_rol" EntitySet="seg_rol" />
+      <End Role="seg_permisos" EntitySet="seg_permisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seg_usuarios_id_seg_rol_fkey" Association="ServiproductoModel.FK_seg_usuarios_id_seg_rol_fkey">
+      <End Role="seg_rol" EntitySet="seg_rol" />
+      <End Role="seg_usuarios" EntitySet="seg_usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ad_regionales">
+    <Key>
+      <PropertyRef Name="codigoregional" />
+    </Key>
+    <Property Name="codigoregional" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="descripcionregional" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="estadoregional" Type="Boolean" />
+    <Property Name="usuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechacreacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="archivo">
+    <Key>
+      <PropertyRef Name="id_archivo" />
+    </Key>
+    <Property Name="id_archivo" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="cod_banco" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="extension" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="separador" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="tipo_archivo" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
+    <Property Name="sql_head" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="sql_body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sql_footer" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="iscrc" Type="Boolean" />
+    <NavigationProperty Name="archivo_body" Relationship="ServiproductoModel.fk_archbody_ref_arch" FromRole="archivo" ToRole="archivo_body" />
+    <NavigationProperty Name="archivo_footer" Relationship="ServiproductoModel.fk_archfoot_ref_arch" FromRole="archivo" ToRole="archivo_footer" />
+    <NavigationProperty Name="archivo_head" Relationship="ServiproductoModel.fk_archhead_ref_arch" FromRole="archivo" ToRole="archivo_head" />
+  </EntityType>
+  <EntityType Name="archivo_body">
+    <Key>
+      <PropertyRef Name="id_archivo_body" />
+    </Key>
+    <Property Name="id_archivo_body" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="id_archivo" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="orden" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+    <Property Name="tamano" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="tipo_dato" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="formato" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="decimales" Type="Int16" />
+    <Property Name="caracter_relleno" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="justificacion" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="val_defecto" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="funcionbd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nom_campobd" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="requerido" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="archivo" Relationship="ServiproductoModel.fk_archbody_ref_arch" FromRole="archivo_body" ToRole="archivo" />
+    <NavigationProperty Name="archivo_body_dominio" Relationship="ServiproductoModel.fk_archbodydomi_ref_archbody" FromRole="archivo_body" ToRole="archivo_body_dominio" />
+  </EntityType>
+  <EntityType Name="archivo_body_dominio">
+    <Key>
+      <PropertyRef Name="id_archivo_body_dominio" />
+    </Key>
+    <Property Name="id_archivo_body_dominio" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="id_archivo_body" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="val_sistema" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="val_dominio" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="archivo_body" Relationship="ServiproductoModel.fk_archbodydomi_ref_archbody" FromRole="archivo_body_dominio" ToRole="archivo_body" />
+  </EntityType>
+  <EntityType Name="archivo_footer">
+    <Key>
+      <PropertyRef Name="id_archivo_footer" />
+    </Key>
+    <Property Name="id_archivo_footer" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="id_archivo" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="orden" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+    <Property Name="tamano" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="tipo_dato" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="formato" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="decimales" Type="Int16" />
+    <Property Name="caracter_relleno" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="justificacion" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="val_defecto" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="funcionbd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nom_campobd" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="requerido" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="archivo" Relationship="ServiproductoModel.fk_archfoot_ref_arch" FromRole="archivo_footer" ToRole="archivo" />
+  </EntityType>
+  <EntityType Name="archivo_head">
+    <Key>
+      <PropertyRef Name="id_archivo_head" />
+    </Key>
+    <Property Name="id_archivo_head" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="id_archivo" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="orden" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+    <Property Name="tamano" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="tipo_dato" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="formato" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="decimales" Type="Int16" />
+    <Property Name="caracter_relleno" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="justificacion" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="val_defecto" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="funcionbd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nom_campobd" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="requerido" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="observaciones" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="archivo" Relationship="ServiproductoModel.fk_archhead_ref_arch" FromRole="archivo_head" ToRole="archivo" />
+    <NavigationProperty Name="archivo_head_dominio" Relationship="ServiproductoModel.fk_archheaddomi_ref_archhead" FromRole="archivo_head" ToRole="archivo_head_dominio" />
+  </EntityType>
+  <EntityType Name="archivo_head_dominio">
+    <Key>
+      <PropertyRef Name="id_archivo_body_dominio" />
+    </Key>
+    <Property Name="id_archivo_body_dominio" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="id_archivo_head" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="val_sistema" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="val_dominio" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="archivo_head" Relationship="ServiproductoModel.fk_archheaddomi_ref_archhead" FromRole="archivo_head_dominio" ToRole="archivo_head" />
+  </EntityType>
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="nitcliente" />
+    </Key>
+    <Property Name="nitcliente" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
+    <Property Name="cliendigito" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="nombrecliente" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
+    <Property Name="ciudadprincipal" Type="Int32" />
+    <Property Name="direccionempresa" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cedulareplegal" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
+    <Property Name="nombrerepresentante" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="telefonorepresentante" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="exttelrepresentante" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="telefonofaxc" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="exttelfaxc" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="diafacturacion" Type="Int16" Nullable="false" />
+    <Property Name="diacompago" Type="Int16" Nullable="false" />
+    <Property Name="codigopriciiu" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="codpromotora" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="codigousuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechacreacion" Type="DateTime" Precision="3" />
+    <Property Name="codigomodificacion" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechamodificacion" Type="DateTime" Precision="3" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="tipocartera" Type="Int16" />
+    <Property Name="tipodocumento" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="manejoweb" Type="Boolean" />
+    <Property Name="formatounafactura" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="unafacturacli" Type="Int16" />
+    <Property Name="sectorunafactura" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="exigenominafact" Type="Int16" />
+    <Property Name="diasmora" Type="Int16" />
+  </EntityType>
+  <EntityType Name="codigo_contable">
+    <Key>
+      <PropertyRef Name="id_codigo_contable" />
+    </Key>
+    <Property Name="id_codigo_contable" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cod_contable" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="naturaleza" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="usu_creacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="clase_cuenta" Type="Int16" />
+    <Property Name="centro_operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="movimiento_concepto" Relationship="ServiproductoModel.fk_concepto_reference_codigo_contable" FromRole="codigo_contable" ToRole="movimiento_concepto" />
+  </EntityType>
+  <EntityType Name="compania">
+    <Key>
+      <PropertyRef Name="id_compania" />
+    </Key>
+    <Property Name="id_compania" Type="Int32" Nullable="false" />
+    <Property Name="nit" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="cod_ciudad_compania" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="digito_verificacion" Type="Int16" />
+    <NavigationProperty Name="movimiento_contable" Relationship="ServiproductoModel.fk_concepto_reference_compania" FromRole="compania" ToRole="movimiento_contable" />
+    <NavigationProperty Name="movimiento_concepto" Relationship="ServiproductoModel.fk_concepto_reference_compania_movimiento" FromRole="compania" ToRole="movimiento_concepto" />
+    <NavigationProperty Name="concepto_contable" Relationship="ServiproductoModel.fk_concepto_reference_compania_nomina" FromRole="compania" ToRole="concepto_contable" />
+    <NavigationProperty Name="concepto_contable1" Relationship="ServiproductoModel.fk_concepto_reference_compania_pago" FromRole="compania" ToRole="concepto_contable" />
+    <NavigationProperty Name="cuenta_compania" Relationship="ServiproductoModel.fk_cuencompa_ref_compa" FromRole="compania" ToRole="cuenta_compania" />
+    <NavigationProperty Name="transaccion" Relationship="ServiproductoModel.fk_tran_ref_compania" FromRole="compania" ToRole="transaccion" />
+  </EntityType>
+  <EntityType Name="concepto_contable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="id_compania_nomina" Type="Int32" />
+    <Property Name="id_compania_pago" Type="Int32" />
+    <Property Name="usu_creacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="aplica_rechazo" Type="Int16" />
+    <NavigationProperty Name="compania" Relationship="ServiproductoModel.fk_concepto_reference_compania_nomina" FromRole="concepto_contable" ToRole="compania" />
+    <NavigationProperty Name="compania1" Relationship="ServiproductoModel.fk_concepto_reference_compania_pago" FromRole="concepto_contable" ToRole="compania" />
+    <NavigationProperty Name="movimiento_concepto" Relationship="ServiproductoModel.FK_movimiento_concepto_concepto_contable" FromRole="concepto_contable" ToRole="movimiento_concepto" />
+  </EntityType>
+  <EntityType Name="contrato">
+    <Key>
+      <PropertyRef Name="contraempresa" />
+      <PropertyRef Name="contrasucursal" />
+      <PropertyRef Name="contraanio" />
+      <PropertyRef Name="contrasecue" />
+    </Key>
+    <Property Name="contraempresa" Type="Int16" Nullable="false" />
+    <Property Name="contrasucursal" Type="Int16" Nullable="false" />
+    <Property Name="contraanio" Type="Int16" Nullable="false" />
+    <Property Name="contrasecue" Type="Int32" Nullable="false" />
+    <Property Name="fechacontrato" Type="DateTime" Precision="3" />
+    <Property Name="consecutivoanio" Type="Int16" />
+    <Property Name="consecutivo" Type="Int32" />
+    <Property Name="nitcliente" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="codsector" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="docutrabajador" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="fechainicio" Type="DateTime" Precision="3" />
+    <Property Name="fechafinal" Type="DateTime" Precision="3" />
+    <Property Name="estadocontrato" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="codigocargo" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+    <Property Name="salario" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="horaslaborables" Type="Int16" />
+    <Property Name="tiponomina" Type="Int16" />
+    <Property Name="tarifaatep" Type="Decimal" Precision="6" Scale="4" />
+    <Property Name="cencostoclie" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="cencontaclie" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="ciudadlaboral" Type="Int32" />
+    <Property Name="codigousuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechacreacion" Type="DateTime" Precision="3" />
+    <Property Name="usuariomod" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechamod" Type="DateTime" Precision="3" />
+    <Property Name="fasenomina" Type="Boolean" />
+    <Property Name="conseguridad" Type="Boolean" />
+    <Property Name="concuebancos" Type="Boolean" />
+    <Property Name="condocumentos" Type="Boolean" />
+    <Property Name="conparientes" Type="Boolean" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="traslado" Type="Boolean" />
+    <Property Name="codigosucursal" Type="Int16" />
+    <Property Name="consecutivomov" Type="Int16" />
+    <Property Name="sumaconsecutivos" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="division" Type="Int16" />
+    <Property Name="sena" Type="Int16" />
+    <Property Name="baseretencion" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="borrar" Type="Int16" />
+    <Property Name="salario1" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="progretiro" Type="DateTime" Precision="3" />
+    <Property Name="decalarafuente" Type="Int16" />
+    <Property Name="transporte" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="comunicacion" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="alimentacion" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="codigocentrocosto" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+    <Property Name="causervi" Type="Int16" />
+    <Property Name="concoanio" Type="Int32" />
+    <Property Name="concosecue" Type="String" MaxLength="5" FixedLength="true" Unicode="true" />
+    <Property Name="grupocosto" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="cencosto" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="regional" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="tipocontrato" Type="Int16" />
+    <Property Name="codigogrupo" Type="Int16" />
+    <Property Name="codigoservicio" Type="Int16" />
+    <Property Name="perfil" Type="Int16" />
+    <Property Name="ubicasaludp" Type="Int16" />
+    <Property Name="div472" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="descripcionbloqueo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tipocontrato1" Type="Int16" />
+    <Property Name="centrocosto3" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="numeronovedad" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="sban" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ctaempleado">
+    <Key>
+      <PropertyRef Name="contraempresa" />
+      <PropertyRef Name="contrasucursal" />
+      <PropertyRef Name="contraanio" />
+      <PropertyRef Name="contrasecue" />
+      <PropertyRef Name="fechainicio" />
+    </Key>
+    <Property Name="contraempresa" Type="Int16" Nullable="false" />
+    <Property Name="contrasucursal" Type="Int16" Nullable="false" />
+    <Property Name="contraanio" Type="Int16" Nullable="false" />
+    <Property Name="contrasecue" Type="Int32" Nullable="false" />
+    <Property Name="codbanco" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="codsucursal" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="cuentaempleado" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tipocuenta" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="fechainicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fechafinal" Type="DateTime" Precision="3" />
+    <Property Name="fechacreacion" Type="DateTime" Precision="3" />
+    <Property Name="codigousuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="usuariomod" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechamod" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="cuenta_compania">
+    <Key>
+      <PropertyRef Name="id_cuenta_compania" />
+    </Key>
+    <Property Name="id_cuenta_compania" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="num_cuenta" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="id_compania" Type="Int32" Nullable="false" />
+    <Property Name="cod_banco" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="nom_banco" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="id_tipo_cuenta" Type="Int32" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="cod_contable" Type="Int32" />
+    <NavigationProperty Name="compania" Relationship="ServiproductoModel.fk_cuencompa_ref_compa" FromRole="cuenta_compania" ToRole="compania" />
+    <NavigationProperty Name="tipo_cuenta" Relationship="ServiproductoModel.fk_cuencompa_ref_tipocuen" FromRole="cuenta_compania" ToRole="tipo_cuenta" />
+  </EntityType>
+  <EntityType Name="empresasp">
+    <Key>
+      <PropertyRef Name="codigoempresa" />
+    </Key>
+    <Property Name="codigoempresa" Type="Int16" Nullable="false" />
+    <Property Name="nombreempresa" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="nitempresa" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="dvempresa" Type="Int16" />
+    <Property Name="direccionempresa" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+    <Property Name="arpsoiempresa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="direccionsucursal" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="movimiento_concepto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_concepto_contable" Type="Int32" />
+    <Property Name="id_compania_movimiento" Type="Int32" />
+    <Property Name="codigo_contable" Type="Int32" />
+    <Property Name="naturaleza_movimiento" Type="Int16" />
+    <Property Name="usu_creacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="codigo_contable1" Relationship="ServiproductoModel.fk_concepto_reference_codigo_contable" FromRole="movimiento_concepto" ToRole="codigo_contable" />
+    <NavigationProperty Name="compania" Relationship="ServiproductoModel.fk_concepto_reference_compania_movimiento" FromRole="movimiento_concepto" ToRole="compania" />
+    <NavigationProperty Name="concepto_contable" Relationship="ServiproductoModel.FK_movimiento_concepto_concepto_contable" FromRole="movimiento_concepto" ToRole="concepto_contable" />
+  </EntityType>
+  <EntityType Name="movimiento_contable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_compania" Type="Int32" />
+    <Property Name="tercero" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="centro_operacion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="monto_debito" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="monto_credito" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="documento_cruce" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion_movimiento" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="generado" Type="Int16" />
+    <Property Name="codigo_contable" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="id_transaccion" Type="Int32" />
+    <Property Name="lote" Type="Int32" />
+    <NavigationProperty Name="compania" Relationship="ServiproductoModel.fk_concepto_reference_compania" FromRole="movimiento_contable" ToRole="compania" />
+  </EntityType>
+  <EntityType Name="n_consecutivosiesa">
+    <Key>
+      <PropertyRef Name="codigoconsec" />
+    </Key>
+    <Property Name="codigoconsec" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="consecutivo" Type="Int16" />
+  </EntityType>
+  <EntityType Name="n_movimientocabecera">
+    <Key>
+      <PropertyRef Name="codempresamov" />
+      <PropertyRef Name="codsucursalmov" />
+      <PropertyRef Name="anocmov" />
+      <PropertyRef Name="consecutivocmov" />
+      <PropertyRef Name="consecmov" />
+    </Key>
+    <Property Name="codempresamov" Type="Int16" Nullable="false" />
+    <Property Name="codsucursalmov" Type="Int16" Nullable="false" />
+    <Property Name="anocmov" Type="Int16" Nullable="false" />
+    <Property Name="consecutivocmov" Type="Int32" Nullable="false" />
+    <Property Name="consecmov" Type="Int16" Nullable="false" />
+    <Property Name="fechamov" Type="DateTime" Precision="3" />
+    <Property Name="fechainicialmov" Type="DateTime" Precision="3" />
+    <Property Name="fechafinalmov" Type="DateTime" Precision="3" />
+    <Property Name="finmesmov" Type="Int16" />
+    <Property Name="programadosmov" Type="Int16" />
+    <Property Name="sufijofacturamov" Type="String" MaxLength="5" FixedLength="true" Unicode="true" />
+    <Property Name="numerofacturamov" Type="Int32" />
+    <Property Name="valornetomov" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="codbancomov" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="codsucursalbanco" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="cuentaempleadomov" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="numernominamov" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="estadomov" Type="Int16" />
+    <Property Name="codigousuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="estadopago" Type="Int16" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <Property Name="diasserviciosc" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="diasnetosc" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="anopago" Type="Int16" />
+    <Property Name="consecutivopago" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="tiponomi" Type="Int16" />
+    <Property Name="nominasiesa" Type="Decimal" Precision="6" Scale="0" />
+    <Property Name="aplicacion" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="n_tiponomina">
+    <Key>
+      <PropertyRef Name="tiponomina" />
+    </Key>
+    <Property Name="tiponomina" Type="Int16" Nullable="false" />
+    <Property Name="nombretiponomina" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="dias" Type="Int16" />
+    <Property Name="codigousuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechacreacion" Type="DateTime" Precision="3" />
+    <Property Name="horastiponomina" Type="Int16" />
+  </EntityType>
+  <EntityType Name="nomina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="llave_nomina" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nit_compania" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="tipo_nomina_colab" Type="Int16" />
+    <Property Name="num_nomina_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="num_contrato_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="fec_nomina_colab" Type="DateTime" Precision="3" />
+    <Property Name="nom_compania" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nit_cliente" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_docum_colab" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="num_docum_colab" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="cod_banco_colab" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="nom_banco_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="num_cuenta_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_cuenta_colab" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="des_tipo_cuenta_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nom_tipo_nomina_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="monto_pago_colab" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_nomina_liquidacion" Type="Int16" />
+    <Property Name="estado_mora" Type="Int16" />
+    <Property Name="fec_programacion_pago" Type="DateTime" Precision="3" />
+    <Property Name="usu_creacion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="ciudad_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cod_ciudad_colab" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="nomina_rechazada">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="llave_nomina" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nit_compania" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="tipo_nomina_colab" Type="Int16" />
+    <Property Name="num_nomina_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="num_contrato_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="fec_nomina_colab" Type="DateTime" Precision="3" />
+    <Property Name="nom_compania" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nit_cliente" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_docum_colab" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="num_docum_colab" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="cod_banco_colab" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="nom_banco_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="num_cuenta_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_cuenta_colab" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="des_tipo_cuenta_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nom_tipo_nomina_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="monto_pago_colab" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_nomina_liquidacion" Type="Int16" />
+    <Property Name="estado_mora" Type="Int16" />
+    <Property Name="fec_programacion_pago" Type="DateTime" Precision="3" />
+    <Property Name="usu_creacion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="ciudad_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cod_ciudad_colab" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="p_cliente_bloqueado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nit_cliente" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="p_colaborador_bloqueado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="identificacion" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="p_formato_respuesta_banco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cod_banco" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="agrupa_transacciones" Type="Int16" />
+    <Property Name="contabiliza_rechazos" Type="Int16" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="p_motivo_rechazo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="cod_banco" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="rechazo_detalle" Relationship="ServiproductoModel.fk_rechdet_ref_p_motirech" FromRole="p_motivo_rechazo" ToRole="rechazo_detalle" />
+  </EntityType>
+  <EntityType Name="parametro">
+    <Key>
+      <PropertyRef Name="id_parametro" />
+    </Key>
+    <Property Name="id_parametro" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="clave" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="valor" Type="String" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rechazo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_transaccion_detalle" Type="Int32" Nullable="false" />
+    <Property Name="tipo_rechazo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="fec_solucion" Type="DateTime" Precision="3" />
+    <Property Name="estado_rechazo" Type="Int16" Nullable="false" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="transaccion_detalle" Relationship="ServiproductoModel.fk_rech_ref_trandeta" FromRole="rechazo" ToRole="transaccion_detalle" />
+    <NavigationProperty Name="rechazo_detalle" Relationship="ServiproductoModel.fk_rechdeta_ref_rech" FromRole="rechazo" ToRole="rechazo_detalle" />
+  </EntityType>
+  <EntityType Name="rechazo_detalle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_rechazo" Type="Int32" Nullable="false" />
+    <Property Name="id_motivo_rechazo" Type="Int32" />
+    <Property Name="cod_motivo_rechazo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="p_motivo_rechazo" Relationship="ServiproductoModel.fk_rechdet_ref_p_motirech" FromRole="rechazo_detalle" ToRole="p_motivo_rechazo" />
+    <NavigationProperty Name="rechazo" Relationship="ServiproductoModel.fk_rechdeta_ref_rech" FromRole="rechazo_detalle" ToRole="rechazo" />
+  </EntityType>
+  <EntityType Name="reclutamiento">
+    <Key>
+      <PropertyRef Name="numerodocumento" />
+    </Key>
+    <Property Name="tipodocumento" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="numerodocumento" Type="Decimal" Nullable="false" Precision="12" Scale="0" />
+    <Property Name="expedidoen" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="primerapellido" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="segundoapellido" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="primernombre" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="segundonombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="codigosucursal" Type="Int16" />
+    <Property Name="sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="estadocivil" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="estadoactual" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="fechanacimiento" Type="DateTime" Precision="3" />
+    <Property Name="lugarnacimiento" Type="Int32" />
+    <Property Name="residencia" Type="Int32" />
+    <Property Name="direccionresidencia" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="barrio" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="telefonoresidencia" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="telefonooficina" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="telefonocelular" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="fechareclutamiento" Type="DateTime" Precision="3" />
+    <Property Name="fechaproxcita" Type="DateTime" Precision="3" />
+    <Property Name="autoparticular" Type="Boolean" />
+    <Property Name="motoparticular" Type="Boolean" />
+    <Property Name="pasevehimoto" Type="Boolean" />
+    <Property Name="catcondauto" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="catcondmoto" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="aspiracionsalarial" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="reubicacion" Type="Int16" />
+    <Property Name="experiencialaboral" Type="Int16" />
+    <Property Name="codigoentrevistador" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="codigosicologo" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="tiposangre" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="codhorario" Type="Int16" />
+    <Property Name="libretamilitar" Type="Boolean" />
+    <Property Name="distmilitar" Type="Int16" />
+    <Property Name="tipolibreta" Type="Int16" />
+    <Property Name="signosangre" Type="Boolean" />
+    <Property Name="fechamodificacion" Type="DateTime" Precision="3" />
+    <Property Name="codigomodificador" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="numrecluanio" Type="Int16" />
+    <Property Name="numreclusecue" Type="Int32" />
+    <Property Name="laboentrevista" Type="Boolean" />
+    <Property Name="cambioresidencia" Type="Boolean" />
+    <Property Name="fechaweb" Type="DateTime" Precision="3" />
+    <Property Name="cabezafam" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="habeasdata" Type="Boolean" />
+    <Property Name="usuhabeas" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="nomcontacto" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="telcontacto" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="estadoregistro" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="nrohijos" Type="Int16" />
+    <Property Name="fechaexpedicion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="secuencias">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Valor" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sucursalesp">
+    <Key>
+      <PropertyRef Name="codigosucursal" />
+    </Key>
+    <Property Name="codigosucursal" Type="Int16" Nullable="false" />
+    <Property Name="nombresucursal" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="tipodocegreso" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="tempo" Type="Int32" />
+    <Property Name="direccionsucursal" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+    <Property Name="barrio" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="telefonos" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="celular" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="correo" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="codigoregional" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="actsyacamcio" Type="Boolean" />
+    <Property Name="syacamcio" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="actsecamcio" Type="Boolean" />
+    <Property Name="secamcio" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="usuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechaactivacion" Type="DateTime" Precision="3" />
+    <Property Name="ubicacion" Type="Int32" />
+    <Property Name="ciuppal" Type="Int16" />
+  </EntityType>
+  <EntityType Name="tabancos">
+    <Key>
+      <PropertyRef Name="codbanco" />
+    </Key>
+    <Property Name="codbanco" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="nombrebanco" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="habilitado" Type="Boolean" />
+    <Property Name="digitos" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="tipoplano" Type="Int16" />
+    <Property Name="codigobanco" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tabasucursal" Relationship="ServiproductoModel.FK_tabasucursal_codbanco_fkey" FromRole="tabancos" ToRole="tabasucursal" />
+  </EntityType>
+  <EntityType Name="tabasucursal">
+    <Key>
+      <PropertyRef Name="codbanco" />
+      <PropertyRef Name="codsucursal" />
+    </Key>
+    <Property Name="codbanco" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Name="codsucursal" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="numerocuenta" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nombresucursal" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="direccion" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ciudad" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="telefono" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="exttelefono" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="extfax" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="empresacta" Type="Int16" />
+    <Property Name="archivoplano" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="codrelacion" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="codpagootrobco" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="habilitado" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="codigousuario" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechacreación" Type="DateTime" Precision="3" />
+    <Property Name="usuariomod" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="fechamod" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tabancos" Relationship="ServiproductoModel.FK_tabasucursal_codbanco_fkey" FromRole="tabasucursal" ToRole="tabancos" />
+  </EntityType>
+  <EntityType Name="tipo_cuenta">
+    <Key>
+      <PropertyRef Name="id_tipo_cuenta" />
+    </Key>
+    <Property Name="id_tipo_cuenta" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="cuenta_compania" Relationship="ServiproductoModel.fk_cuencompa_ref_tipocuen" FromRole="tipo_cuenta" ToRole="cuenta_compania" />
+  </EntityType>
+  <EntityType Name="tipo_nomina">
+    <Key>
+      <PropertyRef Name="id_tipo_nomina" />
+    </Key>
+    <Property Name="id_tipo_nomina" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="codigo" Type="Int16" />
+    <Property Name="descripcion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_transaccion">
+    <Key>
+      <PropertyRef Name="id_tipo_transaccion" />
+    </Key>
+    <Property Name="id_tipo_transaccion" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="transaccion" Relationship="ServiproductoModel.fk_tran_ref_tipotran" FromRole="tipo_transaccion" ToRole="transaccion" />
+  </EntityType>
+  <EntityType Name="tiponomina">
+    <Key>
+      <PropertyRef Name="codtiponomina" />
+    </Key>
+    <Property Name="codtiponomina" Type="Int16" Nullable="false" />
+    <Property Name="nomtiponomina" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="diasnomina" Type="Int16" />
+    <Property Name="habilitado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tope_contrato">
+    <Key>
+      <PropertyRef Name="id_tope_contrato" />
+    </Key>
+    <Property Name="id_tope_contrato" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="num_contrato" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="max_monto_tope" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="usu_creacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="transaccion">
+    <Key>
+      <PropertyRef Name="id_transaccion" />
+    </Key>
+    <Property Name="id_transaccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cod_transaccion" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="id_tipo_transaccion" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="id_compania_nomina" Type="Int32" />
+    <Property Name="cod_banco_pago" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="estado_transaccion" Type="Int16" />
+    <Property Name="monto_generado" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="cant_detalles_generados" Type="Int32" />
+    <Property Name="cant_rechazos_automaticos" Type="Int32" />
+    <Property Name="num_cuenta_pago" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ruta_archivo" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="compania" Relationship="ServiproductoModel.fk_tran_ref_compania" FromRole="transaccion" ToRole="compania" />
+    <NavigationProperty Name="tipo_transaccion" Relationship="ServiproductoModel.fk_tran_ref_tipotran" FromRole="transaccion" ToRole="tipo_transaccion" />
+    <NavigationProperty Name="transaccion_detalle" Relationship="ServiproductoModel.FK_transaccion_detalle_transaccion" FromRole="transaccion" ToRole="transaccion_detalle" />
+  </EntityType>
+  <EntityType Name="transaccion_detalle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_transaccion" Type="Int32" Nullable="false" />
+    <Property Name="llave_nomina" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nit_compania" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="tipo_nomina_colab" Type="Int16" />
+    <Property Name="num_nomina_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="num_contrato_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="fec_nomina_colab" Type="DateTime" Precision="3" />
+    <Property Name="nom_compania" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nit_cliente" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_docum_colab" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="num_docum_colab" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="cod_banco_colab" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="nom_banco_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="num_cuenta_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_cuenta_colab" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="des_tipo_cuenta_colab" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="nom_tipo_nomina_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="monto_pago_colab" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tipo_nomina_liquidacion" Type="Int16" />
+    <Property Name="estado_mora" Type="Int16" />
+    <Property Name="fec_programacion_pago" Type="DateTime" Precision="3" />
+    <Property Name="estado_pago" Type="Int16" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="ciudad_colab" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cod_ciudad_colab" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="rechazo" Relationship="ServiproductoModel.fk_rech_ref_trandeta" FromRole="transaccion_detalle" ToRole="rechazo" />
+    <NavigationProperty Name="transaccion" Relationship="ServiproductoModel.FK_transaccion_detalle_transaccion" FromRole="transaccion_detalle" ToRole="transaccion" />
+    <NavigationProperty Name="transaccion_detalle1" Relationship="ServiproductoModel.FK_transaccion_detalle_transaccion_detalle" FromRole="transaccion_detalle" ToRole="transaccion_detalle1" />
+    <NavigationProperty Name="transaccion_detalle2" Relationship="ServiproductoModel.FK_transaccion_detalle_transaccion_detalle" FromRole="transaccion_detalle1" ToRole="transaccion_detalle" />
+  </EntityType>
+  <EntityType Name="seg_paginas">
+    <Key>
+      <PropertyRef Name="id_seg_paginas" />
+    </Key>
+    <Property Name="id_seg_paginas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="seg_permisos" Relationship="ServiproductoModel.FK_seg_permisos_id_seg_paginas_fkey" FromRole="seg_paginas" ToRole="seg_permisos" />
+  </EntityType>
+  <EntityType Name="seg_permisos">
+    <Key>
+      <PropertyRef Name="id_seg_permisos" />
+    </Key>
+    <Property Name="id_seg_permisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_seg_rol" Type="Int32" />
+    <Property Name="id_seg_paginas" Type="Int32" />
+    <Property Name="crear" Type="Int16" Nullable="false" />
+    <Property Name="consultar" Type="Int16" Nullable="false" />
+    <Property Name="modificar" Type="Int16" Nullable="false" />
+    <Property Name="inactivar" Type="Int16" Nullable="false" />
+    <Property Name="exportar" Type="Int16" Nullable="false" />
+    <Property Name="generar" Type="Int16" Nullable="false" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="seg_paginas" Relationship="ServiproductoModel.FK_seg_permisos_id_seg_paginas_fkey" FromRole="seg_permisos" ToRole="seg_paginas" />
+    <NavigationProperty Name="seg_rol" Relationship="ServiproductoModel.FK_seg_permisos_id_seg_rol_fkey" FromRole="seg_permisos" ToRole="seg_rol" />
+  </EntityType>
+  <EntityType Name="seg_rol">
+    <Key>
+      <PropertyRef Name="id_seg_rol" />
+    </Key>
+    <Property Name="id_seg_rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="seg_permisos" Relationship="ServiproductoModel.FK_seg_permisos_id_seg_rol_fkey" FromRole="seg_rol" ToRole="seg_permisos" />
+    <NavigationProperty Name="seg_usuarios" Relationship="ServiproductoModel.FK_seg_usuarios_id_seg_rol_fkey" FromRole="seg_rol" ToRole="seg_usuarios" />
+  </EntityType>
+  <EntityType Name="seg_usuarios">
+    <Key>
+      <PropertyRef Name="id_seg_usuarios" />
+    </Key>
+    <Property Name="id_seg_usuarios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="apellidos" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cedula" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="usuario" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="correo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="contrasena" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id_seg_rol" Type="Int32" />
+    <Property Name="usu_creacion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="usu_modificacion" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="fec_modificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="seg_rol" Relationship="ServiproductoModel.FK_seg_usuarios_id_seg_rol_fkey" FromRole="seg_usuarios" ToRole="seg_rol" />
+  </EntityType>
+  <Association Name="fk_archbody_ref_arch">
+    <End Type="ServiproductoModel.archivo" Role="archivo" Multiplicity="1" />
+    <End Type="ServiproductoModel.archivo_body" Role="archivo_body" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo">
+        <PropertyRef Name="id_archivo" />
+      </Principal>
+      <Dependent Role="archivo_body">
+        <PropertyRef Name="id_archivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archfoot_ref_arch">
+    <End Type="ServiproductoModel.archivo" Role="archivo" Multiplicity="1" />
+    <End Type="ServiproductoModel.archivo_footer" Role="archivo_footer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo">
+        <PropertyRef Name="id_archivo" />
+      </Principal>
+      <Dependent Role="archivo_footer">
+        <PropertyRef Name="id_archivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archhead_ref_arch">
+    <End Type="ServiproductoModel.archivo" Role="archivo" Multiplicity="1" />
+    <End Type="ServiproductoModel.archivo_head" Role="archivo_head" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo">
+        <PropertyRef Name="id_archivo" />
+      </Principal>
+      <Dependent Role="archivo_head">
+        <PropertyRef Name="id_archivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archbodydomi_ref_archbody">
+    <End Type="ServiproductoModel.archivo_body" Role="archivo_body" Multiplicity="1" />
+    <End Type="ServiproductoModel.archivo_body_dominio" Role="archivo_body_dominio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo_body">
+        <PropertyRef Name="id_archivo_body" />
+      </Principal>
+      <Dependent Role="archivo_body_dominio">
+        <PropertyRef Name="id_archivo_body" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archheaddomi_ref_archhead">
+    <End Type="ServiproductoModel.archivo_head" Role="archivo_head" Multiplicity="1" />
+    <End Type="ServiproductoModel.archivo_head_dominio" Role="archivo_head_dominio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo_head">
+        <PropertyRef Name="id_archivo_head" />
+      </Principal>
+      <Dependent Role="archivo_head_dominio">
+        <PropertyRef Name="id_archivo_head" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_codigo_contable">
+    <End Type="ServiproductoModel.codigo_contable" Role="codigo_contable" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.movimiento_concepto" Role="movimiento_concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="codigo_contable">
+        <PropertyRef Name="id_codigo_contable" />
+      </Principal>
+      <Dependent Role="movimiento_concepto">
+        <PropertyRef Name="codigo_contable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania">
+    <End Type="ServiproductoModel.compania" Role="compania" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.movimiento_contable" Role="movimiento_contable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="movimiento_contable">
+        <PropertyRef Name="id_compania" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania_movimiento">
+    <End Type="ServiproductoModel.compania" Role="compania" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.movimiento_concepto" Role="movimiento_concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="movimiento_concepto">
+        <PropertyRef Name="id_compania_movimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania_nomina">
+    <End Type="ServiproductoModel.compania" Role="compania" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.concepto_contable" Role="concepto_contable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="concepto_contable">
+        <PropertyRef Name="id_compania_nomina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania_pago">
+    <End Type="ServiproductoModel.compania" Role="compania" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.concepto_contable" Role="concepto_contable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="concepto_contable">
+        <PropertyRef Name="id_compania_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_cuencompa_ref_compa">
+    <End Type="ServiproductoModel.compania" Role="compania" Multiplicity="1" />
+    <End Type="ServiproductoModel.cuenta_compania" Role="cuenta_compania" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="cuenta_compania">
+        <PropertyRef Name="id_compania" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tran_ref_compania">
+    <End Type="ServiproductoModel.compania" Role="compania" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.transaccion" Role="transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="transaccion">
+        <PropertyRef Name="id_compania_nomina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_movimiento_concepto_concepto_contable">
+    <End Type="ServiproductoModel.concepto_contable" Role="concepto_contable" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.movimiento_concepto" Role="movimiento_concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="concepto_contable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="movimiento_concepto">
+        <PropertyRef Name="id_concepto_contable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_cuencompa_ref_tipocuen">
+    <End Type="ServiproductoModel.tipo_cuenta" Role="tipo_cuenta" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.cuenta_compania" Role="cuenta_compania" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_cuenta">
+        <PropertyRef Name="id_tipo_cuenta" />
+      </Principal>
+      <Dependent Role="cuenta_compania">
+        <PropertyRef Name="id_tipo_cuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rechdet_ref_p_motirech">
+    <End Type="ServiproductoModel.p_motivo_rechazo" Role="p_motivo_rechazo" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.rechazo_detalle" Role="rechazo_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="p_motivo_rechazo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rechazo_detalle">
+        <PropertyRef Name="id_motivo_rechazo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rech_ref_trandeta">
+    <End Type="ServiproductoModel.transaccion_detalle" Role="transaccion_detalle" Multiplicity="1" />
+    <End Type="ServiproductoModel.rechazo" Role="rechazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="transaccion_detalle">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rechazo">
+        <PropertyRef Name="id_transaccion_detalle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rechdeta_ref_rech">
+    <End Type="ServiproductoModel.rechazo" Role="rechazo" Multiplicity="1" />
+    <End Type="ServiproductoModel.rechazo_detalle" Role="rechazo_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rechazo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rechazo_detalle">
+        <PropertyRef Name="id_rechazo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tabasucursal_codbanco_fkey">
+    <End Type="ServiproductoModel.tabancos" Role="tabancos" Multiplicity="1" />
+    <End Type="ServiproductoModel.tabasucursal" Role="tabasucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabancos">
+        <PropertyRef Name="codbanco" />
+      </Principal>
+      <Dependent Role="tabasucursal">
+        <PropertyRef Name="codbanco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tran_ref_tipotran">
+    <End Type="ServiproductoModel.tipo_transaccion" Role="tipo_transaccion" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.transaccion" Role="transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_transaccion">
+        <PropertyRef Name="id_tipo_transaccion" />
+      </Principal>
+      <Dependent Role="transaccion">
+        <PropertyRef Name="id_tipo_transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transaccion_detalle_transaccion">
+    <End Type="ServiproductoModel.transaccion" Role="transaccion" Multiplicity="1" />
+    <End Type="ServiproductoModel.transaccion_detalle" Role="transaccion_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="transaccion">
+        <PropertyRef Name="id_transaccion" />
+      </Principal>
+      <Dependent Role="transaccion_detalle">
+        <PropertyRef Name="id_transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transaccion_detalle_transaccion_detalle">
+    <End Type="ServiproductoModel.transaccion_detalle" Role="transaccion_detalle" Multiplicity="1" />
+    <End Type="ServiproductoModel.transaccion_detalle" Role="transaccion_detalle1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="transaccion_detalle">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="transaccion_detalle1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seg_permisos_id_seg_paginas_fkey">
+    <End Type="ServiproductoModel.seg_paginas" Role="seg_paginas" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.seg_permisos" Role="seg_permisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seg_paginas">
+        <PropertyRef Name="id_seg_paginas" />
+      </Principal>
+      <Dependent Role="seg_permisos">
+        <PropertyRef Name="id_seg_paginas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seg_permisos_id_seg_rol_fkey">
+    <End Type="ServiproductoModel.seg_rol" Role="seg_rol" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.seg_permisos" Role="seg_permisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seg_rol">
+        <PropertyRef Name="id_seg_rol" />
+      </Principal>
+      <Dependent Role="seg_permisos">
+        <PropertyRef Name="id_seg_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seg_usuarios_id_seg_rol_fkey">
+    <End Type="ServiproductoModel.seg_rol" Role="seg_rol" Multiplicity="0..1" />
+    <End Type="ServiproductoModel.seg_usuarios" Role="seg_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seg_rol">
+        <PropertyRef Name="id_seg_rol" />
+      </Principal>
+      <Dependent Role="seg_usuarios">
+        <PropertyRef Name="id_seg_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

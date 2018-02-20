@@ -1,0 +1,1344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ServiproductoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ad_regionales">
+    <Key>
+      <PropertyRef Name="codigoregional" />
+    </Key>
+    <Property Name="codigoregional" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="descripcionregional" Type="nvarchar" MaxLength="20" />
+    <Property Name="estadoregional" Type="bit" />
+    <Property Name="usuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechacreacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="archivo">
+    <Key>
+      <PropertyRef Name="id_archivo" />
+    </Key>
+    <Property Name="id_archivo" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="cod_banco" Type="nvarchar" MaxLength="3" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="extension" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="separador" Type="nchar" MaxLength="1" />
+    <Property Name="tipo_archivo" Type="decimal" Precision="12" Scale="0" Nullable="false" />
+    <Property Name="sql_head" Type="nvarchar" MaxLength="4000" />
+    <Property Name="sql_body" Type="nvarchar(max)" />
+    <Property Name="sql_footer" Type="nvarchar" MaxLength="4000" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="iscrc" Type="bit" />
+  </EntityType>
+  <EntityType Name="archivo_body">
+    <Key>
+      <PropertyRef Name="id_archivo_body" />
+    </Key>
+    <Property Name="id_archivo_body" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="id_archivo" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="orden" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="tamano" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="tipo_dato" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="formato" Type="nvarchar" MaxLength="20" />
+    <Property Name="decimales" Type="smallint" />
+    <Property Name="caracter_relleno" Type="nchar" MaxLength="1" />
+    <Property Name="justificacion" Type="nchar" MaxLength="1" />
+    <Property Name="val_defecto" Type="nvarchar" MaxLength="60" />
+    <Property Name="funcionbd" Type="nvarchar" MaxLength="100" />
+    <Property Name="nom_campobd" Type="nvarchar" MaxLength="60" />
+    <Property Name="requerido" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="100" />
+    <Property Name="observaciones" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="archivo_body_dominio">
+    <Key>
+      <PropertyRef Name="id_archivo_body_dominio" />
+    </Key>
+    <Property Name="id_archivo_body_dominio" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="id_archivo_body" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="val_sistema" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="val_dominio" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="archivo_footer">
+    <Key>
+      <PropertyRef Name="id_archivo_footer" />
+    </Key>
+    <Property Name="id_archivo_footer" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="id_archivo" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="orden" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="tamano" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="tipo_dato" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="formato" Type="nvarchar" MaxLength="20" />
+    <Property Name="decimales" Type="smallint" />
+    <Property Name="caracter_relleno" Type="nchar" MaxLength="1" />
+    <Property Name="justificacion" Type="nchar" MaxLength="1" />
+    <Property Name="val_defecto" Type="nvarchar" MaxLength="60" />
+    <Property Name="funcionbd" Type="nvarchar" MaxLength="100" />
+    <Property Name="nom_campobd" Type="nvarchar" MaxLength="60" />
+    <Property Name="requerido" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="100" />
+    <Property Name="observaciones" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="archivo_head">
+    <Key>
+      <PropertyRef Name="id_archivo_head" />
+    </Key>
+    <Property Name="id_archivo_head" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="id_archivo" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="orden" Type="decimal" Precision="3" Scale="0" Nullable="false" />
+    <Property Name="tamano" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="tipo_dato" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="formato" Type="nvarchar" MaxLength="20" />
+    <Property Name="decimales" Type="smallint" />
+    <Property Name="caracter_relleno" Type="nchar" MaxLength="1" />
+    <Property Name="justificacion" Type="nchar" MaxLength="1" />
+    <Property Name="val_defecto" Type="nvarchar" MaxLength="60" />
+    <Property Name="funcionbd" Type="nvarchar" MaxLength="100" />
+    <Property Name="nom_campobd" Type="nvarchar" MaxLength="60" />
+    <Property Name="requerido" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="100" />
+    <Property Name="observaciones" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="archivo_head_dominio">
+    <Key>
+      <PropertyRef Name="id_archivo_body_dominio" />
+    </Key>
+    <Property Name="id_archivo_body_dominio" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="id_archivo_head" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="val_sistema" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="val_dominio" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="nitcliente" />
+    </Key>
+    <Property Name="nitcliente" Type="decimal" Precision="12" Scale="0" Nullable="false" />
+    <Property Name="cliendigito" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="nombrecliente" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="ciudadprincipal" Type="int" />
+    <Property Name="direccionempresa" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cedulareplegal" Type="decimal" Precision="12" Scale="0" Nullable="false" />
+    <Property Name="nombrerepresentante" Type="nvarchar" MaxLength="70" Nullable="false" />
+    <Property Name="telefonorepresentante" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="exttelrepresentante" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="telefonofaxc" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="exttelfaxc" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="diafacturacion" Type="smallint" Nullable="false" />
+    <Property Name="diacompago" Type="smallint" Nullable="false" />
+    <Property Name="codigopriciiu" Type="nchar" MaxLength="4" />
+    <Property Name="codpromotora" Type="nchar" MaxLength="3" />
+    <Property Name="codigousuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechacreacion" Type="datetime" />
+    <Property Name="codigomodificacion" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechamodificacion" Type="datetime" />
+    <Property Name="habilitado" Type="bit" />
+    <Property Name="tipocartera" Type="smallint" />
+    <Property Name="tipodocumento" Type="nchar" MaxLength="1" />
+    <Property Name="manejoweb" Type="bit" />
+    <Property Name="formatounafactura" Type="nchar" MaxLength="4" />
+    <Property Name="unafacturacli" Type="smallint" />
+    <Property Name="sectorunafactura" Type="nchar" MaxLength="2" />
+    <Property Name="exigenominafact" Type="smallint" />
+    <Property Name="diasmora" Type="smallint" />
+  </EntityType>
+  <EntityType Name="codigo_contable">
+    <Key>
+      <PropertyRef Name="id_codigo_contable" />
+    </Key>
+    <Property Name="id_codigo_contable" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cod_contable" Type="nvarchar" MaxLength="20" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="200" />
+    <Property Name="naturaleza" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="nchar" MaxLength="1" />
+    <Property Name="clase_cuenta" Type="smallint" />
+    <Property Name="centro_operacion" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="compania">
+    <Key>
+      <PropertyRef Name="id_compania" />
+    </Key>
+    <Property Name="id_compania" Type="int" Nullable="false" />
+    <Property Name="nit" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="cod_ciudad_compania" Type="nvarchar" MaxLength="10" />
+    <Property Name="digito_verificacion" Type="smallint" />
+  </EntityType>
+  <EntityType Name="concepto_contable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="60" />
+    <Property Name="id_compania_nomina" Type="int" />
+    <Property Name="id_compania_pago" Type="int" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="aplica_rechazo" Type="smallint" />
+  </EntityType>
+  <EntityType Name="contrato">
+    <Key>
+      <PropertyRef Name="contraempresa" />
+      <PropertyRef Name="contrasucursal" />
+      <PropertyRef Name="contraanio" />
+      <PropertyRef Name="contrasecue" />
+    </Key>
+    <Property Name="contraempresa" Type="smallint" Nullable="false" />
+    <Property Name="contrasucursal" Type="smallint" Nullable="false" />
+    <Property Name="contraanio" Type="smallint" Nullable="false" />
+    <Property Name="contrasecue" Type="int" Nullable="false" />
+    <Property Name="fechacontrato" Type="datetime" />
+    <Property Name="consecutivoanio" Type="smallint" />
+    <Property Name="consecutivo" Type="int" />
+    <Property Name="nitcliente" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="codsector" Type="nchar" MaxLength="2" />
+    <Property Name="docutrabajador" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="fechainicio" Type="datetime" />
+    <Property Name="fechafinal" Type="datetime" />
+    <Property Name="estadocontrato" Type="nchar" MaxLength="1" />
+    <Property Name="codigocargo" Type="nchar" MaxLength="7" />
+    <Property Name="salario" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="horaslaborables" Type="smallint" />
+    <Property Name="tiponomina" Type="smallint" />
+    <Property Name="tarifaatep" Type="decimal" Precision="6" Scale="4" />
+    <Property Name="cencostoclie" Type="nvarchar" MaxLength="12" />
+    <Property Name="cencontaclie" Type="nvarchar" MaxLength="12" />
+    <Property Name="ciudadlaboral" Type="int" />
+    <Property Name="codigousuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechacreacion" Type="datetime" />
+    <Property Name="usuariomod" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechamod" Type="datetime" />
+    <Property Name="fasenomina" Type="bit" />
+    <Property Name="conseguridad" Type="bit" />
+    <Property Name="concuebancos" Type="bit" />
+    <Property Name="condocumentos" Type="bit" />
+    <Property Name="conparientes" Type="bit" />
+    <Property Name="habilitado" Type="bit" />
+    <Property Name="traslado" Type="bit" />
+    <Property Name="codigosucursal" Type="smallint" />
+    <Property Name="consecutivomov" Type="smallint" />
+    <Property Name="sumaconsecutivos" Type="nchar" MaxLength="20" />
+    <Property Name="division" Type="smallint" />
+    <Property Name="sena" Type="smallint" />
+    <Property Name="baseretencion" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="borrar" Type="smallint" />
+    <Property Name="salario1" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="progretiro" Type="datetime" />
+    <Property Name="decalarafuente" Type="smallint" />
+    <Property Name="transporte" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="comunicacion" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="alimentacion" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="codigocentrocosto" Type="nchar" MaxLength="8" />
+    <Property Name="causervi" Type="smallint" />
+    <Property Name="concoanio" Type="int" />
+    <Property Name="concosecue" Type="nchar" MaxLength="5" />
+    <Property Name="grupocosto" Type="nchar" MaxLength="2" />
+    <Property Name="cencosto" Type="nvarchar" MaxLength="6" />
+    <Property Name="regional" Type="nchar" MaxLength="2" />
+    <Property Name="tipocontrato" Type="smallint" />
+    <Property Name="codigogrupo" Type="smallint" />
+    <Property Name="codigoservicio" Type="smallint" />
+    <Property Name="perfil" Type="smallint" />
+    <Property Name="ubicasaludp" Type="smallint" />
+    <Property Name="div472" Type="nchar" MaxLength="4" />
+    <Property Name="descripcionbloqueo" Type="nvarchar(max)" />
+    <Property Name="tipocontrato1" Type="smallint" />
+    <Property Name="centrocosto3" Type="nvarchar" MaxLength="12" />
+    <Property Name="numeronovedad" Type="nvarchar" MaxLength="12" />
+    <Property Name="sban" Type="nvarchar" MaxLength="12" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'dbserviproducto.dbo.contratos_movimientocabecera' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="contratos_movimientocabecera">
+          <Property Name="codempresamov" Type="smallint" />
+          <Property Name="codsucursalmov" Type="smallint" />
+          <Property Name="anocmov" Type="smallint" />
+          <Property Name="consecutivocmov" Type="int" />
+          <Property Name="fechamov" Type="date" />
+        </EntityType>-->
+  <EntityType Name="ctaempleado">
+    <Key>
+      <PropertyRef Name="contraempresa" />
+      <PropertyRef Name="contrasucursal" />
+      <PropertyRef Name="contraanio" />
+      <PropertyRef Name="contrasecue" />
+      <PropertyRef Name="fechainicio" />
+    </Key>
+    <Property Name="contraempresa" Type="smallint" Nullable="false" />
+    <Property Name="contrasucursal" Type="smallint" Nullable="false" />
+    <Property Name="contraanio" Type="smallint" Nullable="false" />
+    <Property Name="contrasecue" Type="int" Nullable="false" />
+    <Property Name="codbanco" Type="nchar" MaxLength="3" />
+    <Property Name="codsucursal" Type="nchar" MaxLength="4" />
+    <Property Name="cuentaempleado" Type="nvarchar" MaxLength="20" />
+    <Property Name="tipocuenta" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="fechainicio" Type="datetime" Nullable="false" />
+    <Property Name="fechafinal" Type="datetime" />
+    <Property Name="fechacreacion" Type="datetime" />
+    <Property Name="codigousuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="habilitado" Type="bit" />
+    <Property Name="usuariomod" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechamod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="cuenta_compania">
+    <Key>
+      <PropertyRef Name="id_cuenta_compania" />
+    </Key>
+    <Property Name="id_cuenta_compania" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="num_cuenta" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="id_compania" Type="int" Nullable="false" />
+    <Property Name="cod_banco" Type="nvarchar" MaxLength="3" />
+    <Property Name="nom_banco" Type="nvarchar" MaxLength="100" />
+    <Property Name="id_tipo_cuenta" Type="int" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="cod_contable" Type="int" />
+  </EntityType>
+  <EntityType Name="empresasp">
+    <Key>
+      <PropertyRef Name="codigoempresa" />
+    </Key>
+    <Property Name="codigoempresa" Type="smallint" Nullable="false" />
+    <Property Name="nombreempresa" Type="nvarchar" MaxLength="80" />
+    <Property Name="habilitado" Type="bit" />
+    <Property Name="nitempresa" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="dvempresa" Type="smallint" />
+    <Property Name="direccionempresa" Type="nchar" MaxLength="60" />
+    <Property Name="arpsoiempresa" Type="nchar" MaxLength="10" />
+    <Property Name="direccionsucursal" Type="nchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="movimiento_concepto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_concepto_contable" Type="int" />
+    <Property Name="id_compania_movimiento" Type="int" />
+    <Property Name="codigo_contable" Type="int" />
+    <Property Name="naturaleza_movimiento" Type="smallint" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="movimiento_contable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_compania" Type="int" />
+    <Property Name="tercero" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="centro_operacion" Type="nvarchar" MaxLength="10" />
+    <Property Name="monto_debito" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="monto_credito" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="documento_cruce" Type="nvarchar" MaxLength="50" />
+    <Property Name="descripcion_movimiento" Type="nvarchar" MaxLength="200" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="generado" Type="smallint" />
+    <Property Name="codigo_contable" Type="nvarchar" MaxLength="20" />
+    <Property Name="id_transaccion" Type="int" />
+    <Property Name="lote" Type="int" />
+  </EntityType>
+  <EntityType Name="n_consecutivosiesa">
+    <Key>
+      <PropertyRef Name="codigoconsec" />
+    </Key>
+    <Property Name="codigoconsec" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="consecutivo" Type="smallint" />
+  </EntityType>
+  <EntityType Name="n_movimientocabecera">
+    <Key>
+      <PropertyRef Name="codempresamov" />
+      <PropertyRef Name="codsucursalmov" />
+      <PropertyRef Name="anocmov" />
+      <PropertyRef Name="consecutivocmov" />
+      <PropertyRef Name="consecmov" />
+    </Key>
+    <Property Name="codempresamov" Type="smallint" Nullable="false" />
+    <Property Name="codsucursalmov" Type="smallint" Nullable="false" />
+    <Property Name="anocmov" Type="smallint" Nullable="false" />
+    <Property Name="consecutivocmov" Type="int" Nullable="false" />
+    <Property Name="consecmov" Type="smallint" Nullable="false" />
+    <Property Name="fechamov" Type="datetime" />
+    <Property Name="fechainicialmov" Type="datetime" />
+    <Property Name="fechafinalmov" Type="datetime" />
+    <Property Name="finmesmov" Type="smallint" />
+    <Property Name="programadosmov" Type="smallint" />
+    <Property Name="sufijofacturamov" Type="nchar" MaxLength="5" />
+    <Property Name="numerofacturamov" Type="int" />
+    <Property Name="valornetomov" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="codbancomov" Type="nchar" MaxLength="3" />
+    <Property Name="codsucursalbanco" Type="nchar" MaxLength="4" />
+    <Property Name="cuentaempleadomov" Type="nvarchar" MaxLength="20" />
+    <Property Name="numernominamov" Type="nchar" MaxLength="20" />
+    <Property Name="estadomov" Type="smallint" />
+    <Property Name="codigousuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="estadopago" Type="smallint" />
+    <Property Name="fecharegistro" Type="datetime" />
+    <Property Name="diasserviciosc" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="diasnetosc" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="anopago" Type="smallint" />
+    <Property Name="consecutivopago" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="tiponomi" Type="smallint" />
+    <Property Name="nominasiesa" Type="decimal" Precision="6" Scale="0" />
+    <Property Name="aplicacion" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="n_tiponomina">
+    <Key>
+      <PropertyRef Name="tiponomina" />
+    </Key>
+    <Property Name="tiponomina" Type="smallint" Nullable="false" />
+    <Property Name="nombretiponomina" Type="nvarchar" MaxLength="30" />
+    <Property Name="dias" Type="smallint" />
+    <Property Name="codigousuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechacreacion" Type="datetime" />
+    <Property Name="horastiponomina" Type="smallint" />
+  </EntityType>
+  <EntityType Name="nomina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="llave_nomina" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="nit_compania" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="tipo_nomina_colab" Type="smallint" />
+    <Property Name="num_nomina_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="num_contrato_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="fec_nomina_colab" Type="datetime" />
+    <Property Name="nom_compania" Type="nvarchar" MaxLength="100" />
+    <Property Name="nit_cliente" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="nvarchar" MaxLength="100" />
+    <Property Name="tipo_docum_colab" Type="nchar" MaxLength="1" />
+    <Property Name="num_docum_colab" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="cod_banco_colab" Type="nvarchar" MaxLength="3" />
+    <Property Name="nom_banco_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="num_cuenta_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="tipo_cuenta_colab" Type="nchar" MaxLength="1" />
+    <Property Name="des_tipo_cuenta_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="nom_tipo_nomina_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="monto_pago_colab" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="nvarchar" MaxLength="100" />
+    <Property Name="tipo_nomina_liquidacion" Type="smallint" />
+    <Property Name="estado_mora" Type="smallint" />
+    <Property Name="fec_programacion_pago" Type="datetime" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="20" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="ciudad_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="cod_ciudad_colab" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="nomina_rechazada">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="llave_nomina" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="nit_compania" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="tipo_nomina_colab" Type="smallint" />
+    <Property Name="num_nomina_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="num_contrato_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="fec_nomina_colab" Type="datetime" />
+    <Property Name="nom_compania" Type="nvarchar" MaxLength="100" />
+    <Property Name="nit_cliente" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="nvarchar" MaxLength="100" />
+    <Property Name="tipo_docum_colab" Type="nchar" MaxLength="1" />
+    <Property Name="num_docum_colab" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="cod_banco_colab" Type="nvarchar" MaxLength="3" />
+    <Property Name="nom_banco_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="num_cuenta_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="tipo_cuenta_colab" Type="nchar" MaxLength="1" />
+    <Property Name="des_tipo_cuenta_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="nom_tipo_nomina_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="monto_pago_colab" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="nvarchar" MaxLength="100" />
+    <Property Name="tipo_nomina_liquidacion" Type="smallint" />
+    <Property Name="estado_mora" Type="smallint" />
+    <Property Name="fec_programacion_pago" Type="datetime" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="20" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="ciudad_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="cod_ciudad_colab" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="p_cliente_bloqueado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nit_cliente" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="nvarchar" MaxLength="100" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="p_colaborador_bloqueado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="identificacion" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="nvarchar" MaxLength="100" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="p_formato_respuesta_banco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cod_banco" Type="nvarchar" MaxLength="3" />
+    <Property Name="agrupa_transacciones" Type="smallint" />
+    <Property Name="contabiliza_rechazos" Type="smallint" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="p_motivo_rechazo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="100" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="1000" />
+    <Property Name="cod_banco" Type="nvarchar" MaxLength="3" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="parametro">
+    <Key>
+      <PropertyRef Name="id_parametro" />
+    </Key>
+    <Property Name="id_parametro" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="clave" Type="decimal" Precision="12" Scale="0" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="valor" Type="nvarchar" MaxLength="2000" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rechazo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_transaccion_detalle" Type="int" Nullable="false" />
+    <Property Name="tipo_rechazo" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="fec_solucion" Type="datetime" />
+    <Property Name="estado_rechazo" Type="smallint" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rechazo_detalle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_rechazo" Type="int" Nullable="false" />
+    <Property Name="id_motivo_rechazo" Type="int" />
+    <Property Name="cod_motivo_rechazo" Type="nvarchar" MaxLength="30" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="1000" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="reclutamiento">
+    <Key>
+      <PropertyRef Name="numerodocumento" />
+    </Key>
+    <Property Name="tipodocumento" Type="nchar" MaxLength="1" />
+    <Property Name="numerodocumento" Type="decimal" Precision="12" Scale="0" Nullable="false" />
+    <Property Name="expedidoen" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="primerapellido" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="segundoapellido" Type="nvarchar" MaxLength="20" />
+    <Property Name="primernombre" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="segundonombre" Type="nvarchar" MaxLength="20" />
+    <Property Name="codigosucursal" Type="smallint" />
+    <Property Name="sexo" Type="nchar" MaxLength="1" />
+    <Property Name="estadocivil" Type="nchar" MaxLength="1" />
+    <Property Name="estadoactual" Type="nchar" MaxLength="1" />
+    <Property Name="fechanacimiento" Type="datetime" />
+    <Property Name="lugarnacimiento" Type="int" />
+    <Property Name="residencia" Type="int" />
+    <Property Name="direccionresidencia" Type="nvarchar" MaxLength="80" />
+    <Property Name="barrio" Type="nvarchar" MaxLength="30" />
+    <Property Name="telefonoresidencia" Type="nvarchar" MaxLength="30" />
+    <Property Name="telefonooficina" Type="nvarchar" MaxLength="30" />
+    <Property Name="telefonocelular" Type="nvarchar" MaxLength="40" />
+    <Property Name="email" Type="nvarchar" MaxLength="80" />
+    <Property Name="fechareclutamiento" Type="datetime" />
+    <Property Name="fechaproxcita" Type="datetime" />
+    <Property Name="autoparticular" Type="bit" />
+    <Property Name="motoparticular" Type="bit" />
+    <Property Name="pasevehimoto" Type="bit" />
+    <Property Name="catcondauto" Type="nvarchar" MaxLength="2" />
+    <Property Name="catcondmoto" Type="nvarchar" MaxLength="2" />
+    <Property Name="aspiracionsalarial" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="reubicacion" Type="smallint" />
+    <Property Name="experiencialaboral" Type="smallint" />
+    <Property Name="codigoentrevistador" Type="nvarchar" MaxLength="12" />
+    <Property Name="codigosicologo" Type="nvarchar" MaxLength="12" />
+    <Property Name="habilitado" Type="bit" />
+    <Property Name="tiposangre" Type="nchar" MaxLength="2" />
+    <Property Name="codhorario" Type="smallint" />
+    <Property Name="libretamilitar" Type="bit" />
+    <Property Name="distmilitar" Type="smallint" />
+    <Property Name="tipolibreta" Type="smallint" />
+    <Property Name="signosangre" Type="bit" />
+    <Property Name="fechamodificacion" Type="datetime" />
+    <Property Name="codigomodificador" Type="nvarchar" MaxLength="12" />
+    <Property Name="numrecluanio" Type="smallint" />
+    <Property Name="numreclusecue" Type="int" />
+    <Property Name="laboentrevista" Type="bit" />
+    <Property Name="cambioresidencia" Type="bit" />
+    <Property Name="fechaweb" Type="datetime" />
+    <Property Name="cabezafam" Type="nvarchar" MaxLength="1" />
+    <Property Name="habeasdata" Type="bit" />
+    <Property Name="usuhabeas" Type="nvarchar" MaxLength="12" />
+    <Property Name="nomcontacto" Type="nvarchar" MaxLength="45" />
+    <Property Name="telcontacto" Type="nvarchar" MaxLength="12" />
+    <Property Name="estadoregistro" Type="nvarchar" MaxLength="1" />
+    <Property Name="nrohijos" Type="smallint" />
+    <Property Name="fechaexpedicion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="secuencias">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nchar" MaxLength="20" />
+    <Property Name="Valor" Type="int" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="sucursalesp">
+    <Key>
+      <PropertyRef Name="codigosucursal" />
+    </Key>
+    <Property Name="codigosucursal" Type="smallint" Nullable="false" />
+    <Property Name="nombresucursal" Type="nvarchar" MaxLength="40" />
+    <Property Name="tipodocegreso" Type="nchar" MaxLength="2" />
+    <Property Name="tempo" Type="int" />
+    <Property Name="direccionsucursal" Type="nchar" MaxLength="60" />
+    <Property Name="barrio" Type="nvarchar" MaxLength="60" />
+    <Property Name="telefonos" Type="nvarchar" MaxLength="30" />
+    <Property Name="fax" Type="nvarchar" MaxLength="30" />
+    <Property Name="celular" Type="nvarchar" MaxLength="30" />
+    <Property Name="correo" Type="nvarchar" MaxLength="80" />
+    <Property Name="codigoregional" Type="nchar" MaxLength="2" />
+    <Property Name="actsyacamcio" Type="bit" />
+    <Property Name="syacamcio" Type="nvarchar" MaxLength="30" />
+    <Property Name="actsecamcio" Type="bit" />
+    <Property Name="secamcio" Type="nvarchar" MaxLength="30" />
+    <Property Name="usuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechaactivacion" Type="datetime" />
+    <Property Name="ubicacion" Type="int" />
+    <Property Name="ciuppal" Type="smallint" />
+  </EntityType>
+  <EntityType Name="tabancos">
+    <Key>
+      <PropertyRef Name="codbanco" />
+    </Key>
+    <Property Name="codbanco" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="nombrebanco" Type="nvarchar" MaxLength="50" />
+    <Property Name="habilitado" Type="bit" />
+    <Property Name="digitos" Type="decimal" Precision="2" Scale="0" />
+    <Property Name="tipoplano" Type="smallint" />
+    <Property Name="codigobanco" Type="nvarchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="tabasucursal">
+    <Key>
+      <PropertyRef Name="codbanco" />
+      <PropertyRef Name="codsucursal" />
+    </Key>
+    <Property Name="codbanco" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="codsucursal" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="numerocuenta" Type="nvarchar" MaxLength="20" />
+    <Property Name="nombresucursal" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="direccion" Type="nvarchar" MaxLength="40" />
+    <Property Name="ciudad" Type="nvarchar" MaxLength="40" />
+    <Property Name="telefono" Type="nvarchar" MaxLength="12" />
+    <Property Name="exttelefono" Type="nvarchar" MaxLength="5" />
+    <Property Name="fax" Type="nvarchar" MaxLength="12" />
+    <Property Name="extfax" Type="nvarchar" MaxLength="5" />
+    <Property Name="empresacta" Type="smallint" />
+    <Property Name="archivoplano" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="codrelacion" Type="nvarchar" MaxLength="9" />
+    <Property Name="codpagootrobco" Type="nvarchar" MaxLength="3" />
+    <Property Name="habilitado" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="codigousuario" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechacreación" Type="datetime" />
+    <Property Name="usuariomod" Type="nvarchar" MaxLength="12" />
+    <Property Name="fechamod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tipo_cuenta">
+    <Key>
+      <PropertyRef Name="id_tipo_cuenta" />
+    </Key>
+    <Property Name="id_tipo_cuenta" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="60" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_nomina">
+    <Key>
+      <PropertyRef Name="id_tipo_nomina" />
+    </Key>
+    <Property Name="id_tipo_nomina" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="codigo" Type="smallint" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="60" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_transaccion">
+    <Key>
+      <PropertyRef Name="id_tipo_transaccion" />
+    </Key>
+    <Property Name="id_tipo_transaccion" Type="decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tiponomina">
+    <Key>
+      <PropertyRef Name="codtiponomina" />
+    </Key>
+    <Property Name="codtiponomina" Type="smallint" Nullable="false" />
+    <Property Name="nomtiponomina" Type="nvarchar" MaxLength="12" />
+    <Property Name="diasnomina" Type="smallint" />
+    <Property Name="habilitado" Type="bit" />
+  </EntityType>
+  <EntityType Name="tope_contrato">
+    <Key>
+      <PropertyRef Name="id_tope_contrato" />
+    </Key>
+    <Property Name="id_tope_contrato" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="num_contrato" Type="nvarchar" MaxLength="20" />
+    <Property Name="max_monto_tope" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_creacion" Type="datetime" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="transaccion">
+    <Key>
+      <PropertyRef Name="id_transaccion" />
+    </Key>
+    <Property Name="id_transaccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cod_transaccion" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="id_tipo_transaccion" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="id_compania_nomina" Type="int" />
+    <Property Name="cod_banco_pago" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="estado_transaccion" Type="smallint" />
+    <Property Name="monto_generado" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="cant_detalles_generados" Type="int" />
+    <Property Name="cant_rechazos_automaticos" Type="int" />
+    <Property Name="num_cuenta_pago" Type="nvarchar" MaxLength="20" />
+    <Property Name="ruta_archivo" Type="nvarchar" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="transaccion_detalle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_transaccion" Type="int" Nullable="false" />
+    <Property Name="llave_nomina" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="nit_compania" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="tipo_nomina_colab" Type="smallint" />
+    <Property Name="num_nomina_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="num_contrato_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="fec_nomina_colab" Type="datetime" />
+    <Property Name="nom_compania" Type="nvarchar" MaxLength="100" />
+    <Property Name="nit_cliente" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_cliente" Type="nvarchar" MaxLength="100" />
+    <Property Name="tipo_docum_colab" Type="nchar" MaxLength="1" />
+    <Property Name="num_docum_colab" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="cod_banco_colab" Type="nvarchar" MaxLength="3" />
+    <Property Name="nom_banco_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="num_cuenta_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="tipo_cuenta_colab" Type="nchar" MaxLength="1" />
+    <Property Name="des_tipo_cuenta_colab" Type="nvarchar" MaxLength="20" />
+    <Property Name="nom_tipo_nomina_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="monto_pago_colab" Type="decimal" Precision="12" Scale="0" />
+    <Property Name="nom_colaborador" Type="nvarchar" MaxLength="100" />
+    <Property Name="tipo_nomina_liquidacion" Type="smallint" />
+    <Property Name="estado_mora" Type="smallint" />
+    <Property Name="fec_programacion_pago" Type="datetime" />
+    <Property Name="estado_pago" Type="smallint" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="ciudad_colab" Type="nvarchar" MaxLength="100" />
+    <Property Name="cod_ciudad_colab" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="seg_paginas">
+    <Key>
+      <PropertyRef Name="id_seg_paginas" />
+    </Key>
+    <Property Name="id_seg_paginas" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="seg_permisos">
+    <Key>
+      <PropertyRef Name="id_seg_permisos" />
+    </Key>
+    <Property Name="id_seg_permisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_seg_rol" Type="int" />
+    <Property Name="id_seg_paginas" Type="int" />
+    <Property Name="crear" Type="smallint" Nullable="false" />
+    <Property Name="consultar" Type="smallint" Nullable="false" />
+    <Property Name="modificar" Type="smallint" Nullable="false" />
+    <Property Name="inactivar" Type="smallint" Nullable="false" />
+    <Property Name="exportar" Type="smallint" Nullable="false" />
+    <Property Name="generar" Type="smallint" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="seg_rol">
+    <Key>
+      <PropertyRef Name="id_seg_rol" />
+    </Key>
+    <Property Name="id_seg_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="seg_usuarios">
+    <Key>
+      <PropertyRef Name="id_seg_usuarios" />
+    </Key>
+    <Property Name="id_seg_usuarios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="apellidos" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="cedula" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="usuario" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="correo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="contrasena" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="id_seg_rol" Type="int" />
+    <Property Name="usu_creacion" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="fec_creacion" Type="datetime" Nullable="false" />
+    <Property Name="usu_modificacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="fec_modificacion" Type="datetime" />
+  </EntityType>
+  <Association Name="fk_archbody_ref_arch">
+    <End Role="archivo" Type="Self.archivo" Multiplicity="1" />
+    <End Role="archivo_body" Type="Self.archivo_body" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo">
+        <PropertyRef Name="id_archivo" />
+      </Principal>
+      <Dependent Role="archivo_body">
+        <PropertyRef Name="id_archivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archbodydomi_ref_archbody">
+    <End Role="archivo_body" Type="Self.archivo_body" Multiplicity="1" />
+    <End Role="archivo_body_dominio" Type="Self.archivo_body_dominio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo_body">
+        <PropertyRef Name="id_archivo_body" />
+      </Principal>
+      <Dependent Role="archivo_body_dominio">
+        <PropertyRef Name="id_archivo_body" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archfoot_ref_arch">
+    <End Role="archivo" Type="Self.archivo" Multiplicity="1" />
+    <End Role="archivo_footer" Type="Self.archivo_footer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo">
+        <PropertyRef Name="id_archivo" />
+      </Principal>
+      <Dependent Role="archivo_footer">
+        <PropertyRef Name="id_archivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archhead_ref_arch">
+    <End Role="archivo" Type="Self.archivo" Multiplicity="1" />
+    <End Role="archivo_head" Type="Self.archivo_head" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo">
+        <PropertyRef Name="id_archivo" />
+      </Principal>
+      <Dependent Role="archivo_head">
+        <PropertyRef Name="id_archivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_archheaddomi_ref_archhead">
+    <End Role="archivo_head" Type="Self.archivo_head" Multiplicity="1" />
+    <End Role="archivo_head_dominio" Type="Self.archivo_head_dominio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="archivo_head">
+        <PropertyRef Name="id_archivo_head" />
+      </Principal>
+      <Dependent Role="archivo_head_dominio">
+        <PropertyRef Name="id_archivo_head" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_codigo_contable">
+    <End Role="codigo_contable" Type="Self.codigo_contable" Multiplicity="0..1" />
+    <End Role="movimiento_concepto" Type="Self.movimiento_concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="codigo_contable">
+        <PropertyRef Name="id_codigo_contable" />
+      </Principal>
+      <Dependent Role="movimiento_concepto">
+        <PropertyRef Name="codigo_contable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania">
+    <End Role="compania" Type="Self.compania" Multiplicity="0..1" />
+    <End Role="movimiento_contable" Type="Self.movimiento_contable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="movimiento_contable">
+        <PropertyRef Name="id_compania" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania_movimiento">
+    <End Role="compania" Type="Self.compania" Multiplicity="0..1" />
+    <End Role="movimiento_concepto" Type="Self.movimiento_concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="movimiento_concepto">
+        <PropertyRef Name="id_compania_movimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania_nomina">
+    <End Role="compania" Type="Self.compania" Multiplicity="0..1" />
+    <End Role="concepto_contable" Type="Self.concepto_contable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="concepto_contable">
+        <PropertyRef Name="id_compania_nomina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_concepto_reference_compania_pago">
+    <End Role="compania" Type="Self.compania" Multiplicity="0..1" />
+    <End Role="concepto_contable" Type="Self.concepto_contable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="concepto_contable">
+        <PropertyRef Name="id_compania_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_cuencompa_ref_compa">
+    <End Role="compania" Type="Self.compania" Multiplicity="1" />
+    <End Role="cuenta_compania" Type="Self.cuenta_compania" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="cuenta_compania">
+        <PropertyRef Name="id_compania" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_cuencompa_ref_tipocuen">
+    <End Role="tipo_cuenta" Type="Self.tipo_cuenta" Multiplicity="0..1" />
+    <End Role="cuenta_compania" Type="Self.cuenta_compania" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_cuenta">
+        <PropertyRef Name="id_tipo_cuenta" />
+      </Principal>
+      <Dependent Role="cuenta_compania">
+        <PropertyRef Name="id_tipo_cuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_movimiento_concepto_concepto_contable">
+    <End Role="concepto_contable" Type="Self.concepto_contable" Multiplicity="0..1" />
+    <End Role="movimiento_concepto" Type="Self.movimiento_concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="concepto_contable">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="movimiento_concepto">
+        <PropertyRef Name="id_concepto_contable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rech_ref_trandeta">
+    <End Role="transaccion_detalle" Type="Self.transaccion_detalle" Multiplicity="1" />
+    <End Role="rechazo" Type="Self.rechazo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="transaccion_detalle">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rechazo">
+        <PropertyRef Name="id_transaccion_detalle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rechdet_ref_p_motirech">
+    <End Role="p_motivo_rechazo" Type="Self.p_motivo_rechazo" Multiplicity="0..1" />
+    <End Role="rechazo_detalle" Type="Self.rechazo_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="p_motivo_rechazo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rechazo_detalle">
+        <PropertyRef Name="id_motivo_rechazo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rechdeta_ref_rech">
+    <End Role="rechazo" Type="Self.rechazo" Multiplicity="1" />
+    <End Role="rechazo_detalle" Type="Self.rechazo_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rechazo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rechazo_detalle">
+        <PropertyRef Name="id_rechazo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seg_permisos_id_seg_paginas_fkey">
+    <End Role="seg_paginas" Type="Self.seg_paginas" Multiplicity="0..1" />
+    <End Role="seg_permisos" Type="Self.seg_permisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seg_paginas">
+        <PropertyRef Name="id_seg_paginas" />
+      </Principal>
+      <Dependent Role="seg_permisos">
+        <PropertyRef Name="id_seg_paginas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seg_permisos_id_seg_rol_fkey">
+    <End Role="seg_rol" Type="Self.seg_rol" Multiplicity="0..1" />
+    <End Role="seg_permisos" Type="Self.seg_permisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seg_rol">
+        <PropertyRef Name="id_seg_rol" />
+      </Principal>
+      <Dependent Role="seg_permisos">
+        <PropertyRef Name="id_seg_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_seg_usuarios_id_seg_rol_fkey">
+    <End Role="seg_rol" Type="Self.seg_rol" Multiplicity="0..1" />
+    <End Role="seg_usuarios" Type="Self.seg_usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seg_rol">
+        <PropertyRef Name="id_seg_rol" />
+      </Principal>
+      <Dependent Role="seg_usuarios">
+        <PropertyRef Name="id_seg_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tabasucursal_codbanco_fkey">
+    <End Role="tabancos" Type="Self.tabancos" Multiplicity="1" />
+    <End Role="tabasucursal" Type="Self.tabasucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabancos">
+        <PropertyRef Name="codbanco" />
+      </Principal>
+      <Dependent Role="tabasucursal">
+        <PropertyRef Name="codbanco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tran_ref_compania">
+    <End Role="compania" Type="Self.compania" Multiplicity="0..1" />
+    <End Role="transaccion" Type="Self.transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="compania">
+        <PropertyRef Name="id_compania" />
+      </Principal>
+      <Dependent Role="transaccion">
+        <PropertyRef Name="id_compania_nomina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tran_ref_tipotran">
+    <End Role="tipo_transaccion" Type="Self.tipo_transaccion" Multiplicity="0..1" />
+    <End Role="transaccion" Type="Self.transaccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_transaccion">
+        <PropertyRef Name="id_tipo_transaccion" />
+      </Principal>
+      <Dependent Role="transaccion">
+        <PropertyRef Name="id_tipo_transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transaccion_detalle_transaccion">
+    <End Role="transaccion" Type="Self.transaccion" Multiplicity="1" />
+    <End Role="transaccion_detalle" Type="Self.transaccion_detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="transaccion">
+        <PropertyRef Name="id_transaccion" />
+      </Principal>
+      <Dependent Role="transaccion_detalle">
+        <PropertyRef Name="id_transaccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transaccion_detalle_transaccion_detalle">
+    <End Role="transaccion_detalle" Type="Self.transaccion_detalle" Multiplicity="1" />
+    <End Role="transaccion_detalle1" Type="Self.transaccion_detalle" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="transaccion_detalle">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="transaccion_detalle1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ServiproductoModelStoreContainer">
+    <EntitySet Name="ad_regionales" EntityType="Self.ad_regionales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="archivo" EntityType="Self.archivo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="archivo_body" EntityType="Self.archivo_body" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="archivo_body_dominio" EntityType="Self.archivo_body_dominio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="archivo_footer" EntityType="Self.archivo_footer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="archivo_head" EntityType="Self.archivo_head" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="archivo_head_dominio" EntityType="Self.archivo_head_dominio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="clientes" EntityType="Self.clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="codigo_contable" EntityType="Self.codigo_contable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="compania" EntityType="Self.compania" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="concepto_contable" EntityType="Self.concepto_contable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="contrato" EntityType="Self.contrato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ctaempleado" EntityType="Self.ctaempleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cuenta_compania" EntityType="Self.cuenta_compania" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="empresasp" EntityType="Self.empresasp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="movimiento_concepto" EntityType="Self.movimiento_concepto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="movimiento_contable" EntityType="Self.movimiento_contable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="n_consecutivosiesa" EntityType="Self.n_consecutivosiesa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="n_movimientocabecera" EntityType="Self.n_movimientocabecera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="n_tiponomina" EntityType="Self.n_tiponomina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nomina" EntityType="Self.nomina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nomina_rechazada" EntityType="Self.nomina_rechazada" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="p_cliente_bloqueado" EntityType="Self.p_cliente_bloqueado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="p_colaborador_bloqueado" EntityType="Self.p_colaborador_bloqueado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="p_formato_respuesta_banco" EntityType="Self.p_formato_respuesta_banco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="p_motivo_rechazo" EntityType="Self.p_motivo_rechazo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="parametro" EntityType="Self.parametro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="rechazo" EntityType="Self.rechazo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="rechazo_detalle" EntityType="Self.rechazo_detalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="reclutamiento" EntityType="Self.reclutamiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="secuencias" EntityType="Self.secuencias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sucursalesp" EntityType="Self.sucursalesp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tabancos" EntityType="Self.tabancos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tabasucursal" EntityType="Self.tabasucursal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tipo_cuenta" EntityType="Self.tipo_cuenta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tipo_nomina" EntityType="Self.tipo_nomina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tipo_transaccion" EntityType="Self.tipo_transaccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tiponomina" EntityType="Self.tiponomina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tope_contrato" EntityType="Self.tope_contrato" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="transaccion" EntityType="Self.transaccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="transaccion_detalle" EntityType="Self.transaccion_detalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="seg_paginas" EntityType="Self.seg_paginas" Schema="seguridad" store:Type="Tables" />
+    <EntitySet Name="seg_permisos" EntityType="Self.seg_permisos" Schema="seguridad" store:Type="Tables" />
+    <EntitySet Name="seg_rol" EntityType="Self.seg_rol" Schema="seguridad" store:Type="Tables" />
+    <EntitySet Name="seg_usuarios" EntityType="Self.seg_usuarios" Schema="seguridad" store:Type="Tables" />
+    <AssociationSet Name="fk_archbody_ref_arch" Association="Self.fk_archbody_ref_arch">
+      <End Role="archivo" EntitySet="archivo" />
+      <End Role="archivo_body" EntitySet="archivo_body" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archbodydomi_ref_archbody" Association="Self.fk_archbodydomi_ref_archbody">
+      <End Role="archivo_body" EntitySet="archivo_body" />
+      <End Role="archivo_body_dominio" EntitySet="archivo_body_dominio" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archfoot_ref_arch" Association="Self.fk_archfoot_ref_arch">
+      <End Role="archivo" EntitySet="archivo" />
+      <End Role="archivo_footer" EntitySet="archivo_footer" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archhead_ref_arch" Association="Self.fk_archhead_ref_arch">
+      <End Role="archivo" EntitySet="archivo" />
+      <End Role="archivo_head" EntitySet="archivo_head" />
+    </AssociationSet>
+    <AssociationSet Name="fk_archheaddomi_ref_archhead" Association="Self.fk_archheaddomi_ref_archhead">
+      <End Role="archivo_head" EntitySet="archivo_head" />
+      <End Role="archivo_head_dominio" EntitySet="archivo_head_dominio" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_codigo_contable" Association="Self.fk_concepto_reference_codigo_contable">
+      <End Role="codigo_contable" EntitySet="codigo_contable" />
+      <End Role="movimiento_concepto" EntitySet="movimiento_concepto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania" Association="Self.fk_concepto_reference_compania">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="movimiento_contable" EntitySet="movimiento_contable" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania_movimiento" Association="Self.fk_concepto_reference_compania_movimiento">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="movimiento_concepto" EntitySet="movimiento_concepto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania_nomina" Association="Self.fk_concepto_reference_compania_nomina">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="concepto_contable" EntitySet="concepto_contable" />
+    </AssociationSet>
+    <AssociationSet Name="fk_concepto_reference_compania_pago" Association="Self.fk_concepto_reference_compania_pago">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="concepto_contable" EntitySet="concepto_contable" />
+    </AssociationSet>
+    <AssociationSet Name="fk_cuencompa_ref_compa" Association="Self.fk_cuencompa_ref_compa">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="cuenta_compania" EntitySet="cuenta_compania" />
+    </AssociationSet>
+    <AssociationSet Name="fk_cuencompa_ref_tipocuen" Association="Self.fk_cuencompa_ref_tipocuen">
+      <End Role="tipo_cuenta" EntitySet="tipo_cuenta" />
+      <End Role="cuenta_compania" EntitySet="cuenta_compania" />
+    </AssociationSet>
+    <AssociationSet Name="FK_movimiento_concepto_concepto_contable" Association="Self.FK_movimiento_concepto_concepto_contable">
+      <End Role="concepto_contable" EntitySet="concepto_contable" />
+      <End Role="movimiento_concepto" EntitySet="movimiento_concepto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rech_ref_trandeta" Association="Self.fk_rech_ref_trandeta">
+      <End Role="transaccion_detalle" EntitySet="transaccion_detalle" />
+      <End Role="rechazo" EntitySet="rechazo" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rechdet_ref_p_motirech" Association="Self.fk_rechdet_ref_p_motirech">
+      <End Role="p_motivo_rechazo" EntitySet="p_motivo_rechazo" />
+      <End Role="rechazo_detalle" EntitySet="rechazo_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rechdeta_ref_rech" Association="Self.fk_rechdeta_ref_rech">
+      <End Role="rechazo" EntitySet="rechazo" />
+      <End Role="rechazo_detalle" EntitySet="rechazo_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seg_permisos_id_seg_paginas_fkey" Association="Self.FK_seg_permisos_id_seg_paginas_fkey">
+      <End Role="seg_paginas" EntitySet="seg_paginas" />
+      <End Role="seg_permisos" EntitySet="seg_permisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seg_permisos_id_seg_rol_fkey" Association="Self.FK_seg_permisos_id_seg_rol_fkey">
+      <End Role="seg_rol" EntitySet="seg_rol" />
+      <End Role="seg_permisos" EntitySet="seg_permisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_seg_usuarios_id_seg_rol_fkey" Association="Self.FK_seg_usuarios_id_seg_rol_fkey">
+      <End Role="seg_rol" EntitySet="seg_rol" />
+      <End Role="seg_usuarios" EntitySet="seg_usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tabasucursal_codbanco_fkey" Association="Self.FK_tabasucursal_codbanco_fkey">
+      <End Role="tabancos" EntitySet="tabancos" />
+      <End Role="tabasucursal" EntitySet="tabasucursal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tran_ref_compania" Association="Self.fk_tran_ref_compania">
+      <End Role="compania" EntitySet="compania" />
+      <End Role="transaccion" EntitySet="transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tran_ref_tipotran" Association="Self.fk_tran_ref_tipotran">
+      <End Role="tipo_transaccion" EntitySet="tipo_transaccion" />
+      <End Role="transaccion" EntitySet="transaccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transaccion_detalle_transaccion" Association="Self.FK_transaccion_detalle_transaccion">
+      <End Role="transaccion" EntitySet="transaccion" />
+      <End Role="transaccion_detalle" EntitySet="transaccion_detalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transaccion_detalle_transaccion_detalle" Association="Self.FK_transaccion_detalle_transaccion_detalle">
+      <End Role="transaccion_detalle" EntitySet="transaccion_detalle" />
+      <End Role="transaccion_detalle1" EntitySet="transaccion_detalle" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

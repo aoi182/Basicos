@@ -1,0 +1,6 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\Client\bin\testing\Client.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\Client\bin\testing\Client.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\Client\bin\testing\Client.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\Client\obj\testing\Client.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\Client\obj\testing\Client.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\Client\obj\testing\Client.pdb

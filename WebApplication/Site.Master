@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Demo.Net</title>
+    <link href="Content/styles/site.css" rel="stylesheet" />
+    <link href="Content/styles/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" EnablePartialRendering="True">
+            <Scripts>
+                <asp:ScriptReference Path="~/scripts/jquery-3.3.1.js"/>
+            </Scripts>
+        </asp:ScriptManager>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Demos.Net</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="item_home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="item_features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="item_pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="item_about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>

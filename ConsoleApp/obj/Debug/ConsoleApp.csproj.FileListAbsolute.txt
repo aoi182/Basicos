@@ -1,0 +1,13 @@
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\data\LogsDataBase.mdf
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\data\LogsDataBase_log.ldf
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\log4net.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\log4net.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\MyLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\MyLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\bin\Debug\log4net.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleApp\obj\Debug\ConsoleApp.pdb

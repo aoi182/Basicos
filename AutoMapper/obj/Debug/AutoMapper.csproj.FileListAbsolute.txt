@@ -1,0 +1,15 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\obj\Debug\AutoMapper.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\obj\Debug\AutoMapper.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.exe.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\bin\Debug\AutoMapper.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\obj\Debug\AutoMapper.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\obj\Debug\AutoMapper.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\AutoMapper\obj\Debug\AutoMapper.pdb

@@ -1,0 +1,8 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\testing\AutoMapper.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\testing\AutoMapper.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\testing\AutoMapper.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\testing\AutoMapper.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\bin\testing\AutoMapper.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\obj\testing\AutoMapper.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\obj\testing\AutoMapper.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\AutoMapper\obj\testing\AutoMapper.pdb

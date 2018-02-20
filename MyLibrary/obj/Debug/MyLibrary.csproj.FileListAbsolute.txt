@@ -1,0 +1,14 @@
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\bin\Debug\MyLibrary.dll
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\bin\Debug\log4net.dll
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\bin\Debug\log4net.xml
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\obj\Debug\MyLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\obj\Debug\MyLibrary.dll
+C:\Users\Adonis\Desktop\Basicos\MyLibrary\obj\Debug\MyLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\bin\Debug\MyLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\bin\Debug\log4net.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\bin\Debug\log4net.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.pdb

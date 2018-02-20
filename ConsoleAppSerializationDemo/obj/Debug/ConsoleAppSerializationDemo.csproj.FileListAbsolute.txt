@@ -1,0 +1,6 @@
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\bin\Debug\ConsoleAppSerializationDemo.exe.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\bin\Debug\ConsoleAppSerializationDemo.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\bin\Debug\ConsoleAppSerializationDemo.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.pdb

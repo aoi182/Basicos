@@ -1,0 +1,5 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\bin\testing\MyClassLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\bin\testing\MyClassLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\obj\testing\MyClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\obj\testing\MyClassLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\obj\testing\MyClassLibrary.pdb

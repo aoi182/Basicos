@@ -1,0 +1,14 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\DataModelUnitTestProject.dll.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\DataModelUnitTestProject.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\DataModelUnitTestProject.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\DataModel.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\DataModel.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\obj\Debug\DataModelUnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\obj\Debug\DataModelUnitTestProject.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\DataModelUnitTestProject\obj\Debug\DataModelUnitTestProject.pdb

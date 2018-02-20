@@ -1,0 +1,6 @@
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\Client\bin\Debug\Client.exe.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\Client\obj\Debug\Client.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\Client\obj\Debug\Client.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\Client\bin\Debug\Client.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\Client\bin\Debug\Client.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\Client\obj\Debug\ClientWS_Certificated.csprojResolveAssemblyReference.cache

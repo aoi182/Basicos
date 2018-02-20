@@ -1,0 +1,12 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ReadWriteConfigFile\bin\Debug\ReadWriteConfigFile.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ReadWriteConfigFile\bin\Debug\ReadWriteConfigFile.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ReadWriteConfigFile\bin\Debug\ReadWriteConfigFile.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ReadWriteConfigFile\obj\Debug\ReadWriteConfigFile.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ReadWriteConfigFile\obj\Debug\ReadWriteConfigFile.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ReadWriteConfigFile\obj\Debug\ReadWriteConfigFile.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ReadWriteConfigFile\bin\Debug\ReadWriteConfigFile.exe.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ReadWriteConfigFile\bin\Debug\ReadWriteConfigFile.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ReadWriteConfigFile\bin\Debug\ReadWriteConfigFile.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ReadWriteConfigFile\obj\Debug\ReadWriteConfigFile.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ReadWriteConfigFile\obj\Debug\ReadWriteConfigFile.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ReadWriteConfigFile\obj\Debug\ReadWriteConfigFile.pdb

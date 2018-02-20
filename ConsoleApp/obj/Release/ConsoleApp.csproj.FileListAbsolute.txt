@@ -1,0 +1,13 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\data\LogsDataBase.mdf
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\data\LogsDataBase_log.ldf
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\log4net.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\ConsoleApp.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\ConsoleApp.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\ConsoleApp.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\log4net.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\MyLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\MyLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\bin\Release\log4net.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\obj\Release\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\obj\Release\ConsoleApp.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleApp\obj\Release\ConsoleApp.pdb

@@ -1,0 +1,13 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.pdb
+C:\Users\Adonis\Desktop\Basicos\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+C:\Users\Adonis\Desktop\Basicos\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+C:\Users\Adonis\Desktop\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+C:\Users\Adonis\Desktop\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyClassLibrary\obj\Debug\MyClassLibrary.pdb

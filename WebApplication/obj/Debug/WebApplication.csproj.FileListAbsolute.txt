@@ -1,0 +1,130 @@
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\ApplicationInsights.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\csc.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\vbc.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\WebApplication.dll.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\WebApplication.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\WebApplication.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\AjaxControlToolkit.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\AutoMapper.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\DotNetZip.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\MyClassLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\MyClassLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\AutoMapper.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\DotNetZip.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\ApplicationInsights.config
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\csc.exe
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\vbc.exe
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\log4net.config
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\WebApplication.dll.config
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\WebApplication.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\WebApplication.pdb
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\AjaxControlToolkit.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\AutoMapper.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\DotNetZip.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\log4net.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\MyClassLibrary.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\MyLibrary.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\MyClassLibrary.pdb
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\MyLibrary.pdb
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\AutoMapper.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\DotNetZip.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\log4net.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adonis\Desktop\Basicos\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Desktop\Basicos\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Adonis\Desktop\Basicos\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\ApplicationInsights.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\csc.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\vbc.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\log4net.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\WebApplication.dll.config
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\WebApplication.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\WebApplication.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\AjaxControlToolkit.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\AutoMapper.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\DotNetZip.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\log4net.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\MyClassLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\MyLibrary.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\MyClassLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\MyLibrary.pdb
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\AutoMapper.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\DotNetZip.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\log4net.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\obj\Debug\WebApplication.pdb
