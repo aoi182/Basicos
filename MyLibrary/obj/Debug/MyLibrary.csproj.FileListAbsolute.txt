@@ -12,3 +12,10 @@ C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.dll
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\bin\Debug\MyLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\bin\Debug\log4net.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\bin\Debug\log4net.xml
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\MyLibrary\obj\Debug\MyLibrary.pdb

@@ -128,3 +128,8 @@ C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplic
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\log4net.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\log4net.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\MyLibrary.dll
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\MyLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WebApplication\bin\log4net.xml
