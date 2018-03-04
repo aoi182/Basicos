@@ -35,3 +35,4 @@ C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServic
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServiceHello\obj\Debug\WcfServiceHello.csprojResolveAssemblyReference.cache
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServiceHello\obj\Debug\WcfServiceHello.dll
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServiceHello\obj\Debug\WcfServiceHello.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WcfServiceHello\obj\Debug\WcfServiceHello.csprojResolveAssemblyReference.cache

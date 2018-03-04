@@ -9,3 +9,4 @@ C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServic
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csprojResolveAssemblyReference.cache

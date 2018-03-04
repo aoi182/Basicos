@@ -4,3 +4,9 @@ C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAp
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.csprojResolveAssemblyReference.cache
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.exe
 C:\Users\Adonis\Documents\Visual Studio 2015\Projects\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleAppSerializationDemo\bin\Debug\ConsoleAppSerializationDemo.exe.config
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleAppSerializationDemo\bin\Debug\ConsoleAppSerializationDemo.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleAppSerializationDemo\bin\Debug\ConsoleAppSerializationDemo.pdb
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.csprojResolveAssemblyReference.cache
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.exe
+C:\Users\apache\Documents\Visual Studio 2015\Projects\Basicos\ConsoleAppSerializationDemo\obj\Debug\ConsoleAppSerializationDemo.pdb
